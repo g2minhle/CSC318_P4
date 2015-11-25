@@ -24,18 +24,19 @@
       <main class="col-sm-9">
         <div class="row">
           <div class="page-header" >
-            <h1>Topic 1</h1>
+            <h1>Dicussion Board</h1>
           </div>
         </div>
 
         <!-- Start post -->
         <div class="row">
-          <div class="col-sm-2 user-avatar">
+          <figure class="user-avatar col-sm-2 user-avatar">
             <img src="images/avatar1.png" alt="">
-          </div>
+            <figcaption>Thurston Moore</figcaption>
+          </figure>
           <div class="col-sm-10">
             <div class="panel panel-default">
-              <div class="panel-heading">Dicussion Board</div>
+              <div class="panel-heading">Topic 1</div>
               <div class="panel-body">
                 Panel content
                 <div class="post-footer">
@@ -48,9 +49,10 @@
         <!-- End Post -->
 
         <div class="row">
-          <div class="col-sm-2 user-avatar">
+          <figure class="user-avatar col-sm-2 user-avatar">
             <img src="images/avatar3.png" alt="">
-          </div>
+            <figcaption>Lee Ranaldo</figcaption>
+          </figure>
           <div class="col-sm-10">
             <div class="panel panel-default">
               <div class="panel-body">
@@ -63,7 +65,23 @@
             </div>
           </div>
         </div>
+    
+        <br /><br /><br />
+        <div class="row">
+          <figure class="user-avatar col-sm-2 user-avatar">
+            <img src="images/avatar2.png" alt="">
+            <figcaption>Elliot Smith (You)</figcaption>
+          </figure>
+          <div class="col-sm-10">            
+            <div class="form-group">
+              <label for="">Insert your comment</label>
+              <textarea class="form-control"></textarea>
+              
 
+              <button id="submit" type="submit" class="btn btn-primary submit-button pull-right">Submit</button>
+            </div>
+          </div>
+        </div>
       </main>
     </div>
   </div>

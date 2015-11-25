@@ -6,3 +6,12 @@
   padding-top: 30px;
   font-size: 11px;
 }
+
+.submit-button{
+  margin-top: 10px;
+}
+
+.user-avatar figcaption{
+  text-align: center;
+  font-size: 12px;
+}
