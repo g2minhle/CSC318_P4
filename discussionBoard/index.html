@@ -4,12 +4,69 @@
   <meta charset="UTF-8">
   <title>Document</title>
 
-  <link rel="stylesheet" href="bower_components/dist/css/bootstrap.css">
-  <link rel="stylesheet" href="bower_components/dist/css/bootstrap-theme.css">
+  <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
+  <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap-theme.css">
+  <link rel="stylesheet" href="css/custom.css">
 </head>
 <body>
 
+  <div id="wrapper" class="container">
+    <div class="row">
+      <nav id="sidebar" class="col-sm-3">
+        <ul class="nav nav-pills nav-stacked">
+          <li class="active"><a href="#">Topic 1</a></li>
+          <li><a href="#">Topic 2</a></li>
+          <li><a href="#">Topic 2</a></li>
+          <li><a href="#">Topic 2</a></li>
+        </ul>
+      </nav>
 
+      <main class="col-sm-9">
+        <div class="row">
+          <div class="page-header" >
+            <h1>Topic 1</h1>
+          </div>
+        </div>
+
+        <!-- Start post -->
+        <div class="row">
+          <div class="col-sm-2 user-avatar">
+            <img src="images/avatar1.png" alt="">
+          </div>
+          <div class="col-sm-10">
+            <div class="panel panel-default">
+              <div class="panel-heading">Dicussion Board</div>
+              <div class="panel-body">
+                Panel content
+                <div class="post-footer">
+                  Posted at 16:10 on November 13.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- End Post -->
+
+        <div class="row">
+          <div class="col-sm-2 user-avatar">
+            <img src="images/avatar3.png" alt="">
+          </div>
+          <div class="col-sm-10">
+            <div class="panel panel-default">
+              <div class="panel-body">
+                I think you are right!!
+                <div class="post-footer">
+                  Posted at 16:15 on November 13.
+                </div>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </main>
+    </div>
+  </div>
 
   <script src="bower_components/jquery/dist/jquery.js"></script>
   <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
