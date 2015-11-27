@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Project Banana</title>
+
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="css/bootstrap-theme.css">
+	<link rel="stylesheet" href="css/custom.css">
+	<link rel="stylesheet" href="css/jquery-ui.css">
+</head>
+<body onload="a()">
+	<nav class="navbar navbar-default navbar-inverse">
+		<div class="container-fluid">
+			<!-- Brand and toggle get grouped for better mobile display -->
+			<div class="navbar-header">
+				<a class="navbar-brand" href="#">Polaris mixer </a>
+			</div>
+
+			<!-- Collect the nav links, forms, and other content for toggling -->
+			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+				<ul class="nav navbar-nav">
+					<li><a href="#"><span class="glyphicon glyphicon-home" aria-hidden="true"></span> Home </a></li>
+				</ul>
+				<ul class="nav navbar-nav navbar-right">
+					<li><a href="#"><span class="glyphicon glyphicon-wrench" aria-hidden="true"></span> Account setting</a></li>
+					<li><a href="#"><span class="glyphicon glyphicon-off" aria-hidden="true"></span> Log out</a></li>
+				</ul>
+			</div><!-- /.navbar-collapse -->
+		</div><!-- /.container-fluid -->
+	</nav>
+	<div id="wrapper" class="container">
+		<div class="row header">
+			<div class="col-md-12" >
+				<h2>Project Banana</h2>
+			</div>
+		</div>
+		<div class="row trackList">
+			<div class="row thumbnail track">
+				<div class="col-md-3">
+					<h3>Track id</h3>
+					<div class="row">
+						<div class="col-md-12">
+							View mode:
+							<select>
+								<option value="Guitar tab">Guitar tab</option>
+								<option value="Sheet">Sheet</option>
+								<option value="Wave">Wave</option>
+							</select>
+							<button>
+								<span class="glyphicon glyphicon-remove" aria-hidden="true"></span> 
+								Remove track
+							</button>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-9">
+					<div class="trackLength">
+					<img id="img_Test" class="trackLength" src="http://key4song.lingolinda.com/SheetMusic/image/Staff.jpg" >
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-8">
+			</div>
+			<div class="col-md-4">
+				<button class="btn"><span class="glyphicon glyphicon-comment" aria-hidden="true"></span></button>
+			</div>
+		</div>
+		<div class="row mixingPanel">
+			<div class="col-md-8">
+				<div class="row">
+					<div class="col-md-3">Volume</div>
+					<div class="col-md-9">
+						<div id="volumeSlider"></div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-3">Volume</div>
+					<div class="col-md-2">
+						Left
+					</div>
+					<div class="col-md-5">
+						<div id="panLR"></div>
+					</div>
+					<div class="col-md-2">
+						Right
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-3">Bass</div>
+					<div class="col-md-9">
+						<div id="bassSlider"></div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-3">Middle</div>
+					<div class="col-md-9">
+						<div id="middleSlider"></div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-3">Treble</div>
+					<div class="col-md-9">
+						<div id="trebleSlider"></div>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-4" style="background-color:red">
+								<select>
+				  <option value="volvo">Volvo</option>
+				  <option value="saab">Saab</option>
+				  <option value="opel">Opel</option>
+				  <option value="audi">Audi</option>
+				</select>
+			</div>
+
+		</div>
+	</div>
+
+	<script src="js/jquery.js"></script>
+	<script src="js/bootstrap.js"></script>
+	<script src="js/script.js"></script>
+	<script src="js/jquery-ui.js"></script>
+	<script type="text/javascript">
+		function a(){
+			$( "#img_Test" ).draggable({ containment: "parent",  axis: "x" });
+			$( "#volumeSlider" ).slider();
+			$( "#bassSlider" ).slider();
+			$( "#middleSlider" ).slider();
+			$( "#trebleSlider" ).slider();
+			$( "#panLR" ).slider();
+		}
+	</script>
+</body>
+</html>
