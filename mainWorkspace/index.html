@@ -36,76 +36,93 @@
 			</div>
 		</div>
 		<div class="row trackList">
-			<div class="row thumbnail track">
-				<div class="col-md-3">
-					<h3>Track id</h3>
+			<div class="row track">
+				<div class="col-md-2 trackHeader">					
 					<div class="row">
 						<div class="col-md-12">
-							View mode:
-							<select>
-								<option value="Guitar tab">Guitar tab</option>
-								<option value="Sheet">Sheet</option>
-								<option value="Wave">Wave</option>
-							</select>
-							<button>
-								<span class="glyphicon glyphicon-remove" aria-hidden="true"></span> 
-								Remove track
-							</button>
+							<h3>
+								Happy song							
+								<a class="btn btn-danger">
+								<span class="glyphicon glyphicon-remove" aria-hidden="true"></span> 								
+								</a>
+							</h3>	
+						</div>				
+					</div>
+					<div class="row">
+						<div class="col-md-12">
+							<div class="dropdown">
+								<a class="btn btn-primary dropdown-toggle trackDisplayMode" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+									View mode
+									<span class="caret"></span>
+								</a>
+								<ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+									<li><a href="#">Sheet</a></li>
+									<li><a href="#">Guitar tab</a></li>
+									<li><a href="#">wave</a></li>
+								</ul>							
+							</div>																						
 						</div>
+					</div>					
+				</div>
+				<div class="col-md-11 trackColumn">
+					<div class="trackContainer">
+						<img id="img_Test" class="trackLength" src="http://key4song.lingolinda.com/SheetMusic/image/Staff.jpg" >
 					</div>
 				</div>
-				<div class="col-md-9">
-					<div class="trackLength">
-					<img id="img_Test" class="trackLength" src="http://key4song.lingolinda.com/SheetMusic/image/Staff.jpg" >
-					</div>
-				</div>
+			</div>													
+		</div>
+		<div class="row">
+			<hr>
+		</div>
+		<div class="row">			
+			<div class="col-md-5">
+				Project description
+				<textarea class="form-control"></textarea>
+			</div>
+			<div class="col-md-4">
+				<button class="btn btn-primary"><span class="glyphicon glyphicon-comment" aria-hidden="true"></span></button>
 			</div>
 		</div>
 		<div class="row">
-			<div class="col-md-8">
-			</div>
-			<div class="col-md-4">
-				<button class="btn"><span class="glyphicon glyphicon-comment" aria-hidden="true"></span></button>
-			</div>
+			<hr>
 		</div>
 		<div class="row mixingPanel">
 			<div class="col-md-8">
 				<div class="row">
-					<div class="col-md-3">Volume</div>
-					<div class="col-md-9">
+					<div class="col-md-4">
+						<p><b>Volume</b></p>
 						<div id="volumeSlider"></div>
 					</div>
-				</div>
+					<div class="col-md-4">							
+							<p><b>Pan</b></p>
+							<div class="row">								
+								<div class="col-md-2">
+									Left
+								</div>
+								<div class="col-md-8">
+									<div id="panLR"></div>
+								</div>
+								<div class="col-md-1">
+									Right
+								</div>																
+							</div>					
+					</div>
+				</div>		
 				<div class="row">
-					<div class="col-md-3">Volume</div>
-					<div class="col-md-2">
-						Left
+					<div class="col-md-4">	
+							<p><b>Bass</b></p>
+							<div id="bassSlider"></div>
 					</div>
-					<div class="col-md-5">
-						<div id="panLR"></div>
+					<div class="col-md-4">
+							<p><b>Middle</b></p>
+							<div id="middleSlider"></div>
 					</div>
-					<div class="col-md-2">
-						Right
-					</div>
+					<div class="col-md-4">			
+							<p><b>Treble</b></p>
+							<div id="trebleSlider"></div>
+					</div>									
 				</div>
-				<div class="row">
-					<div class="col-md-3">Bass</div>
-					<div class="col-md-9">
-						<div id="bassSlider"></div>
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-md-3">Middle</div>
-					<div class="col-md-9">
-						<div id="middleSlider"></div>
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-md-3">Treble</div>
-					<div class="col-md-9">
-						<div id="trebleSlider"></div>
-					</div>
-				</div>
+				
 			</div>
 			<div class="col-md-4" style="background-color:red">
 								<select>
