@@ -117,26 +117,43 @@
 			<div class="col-md-6">
 				<p>
 				<div class="row">							
+
+
 					<div class="col-md-4">
-						<button class="btn btn-primary form-control">Play  <span class="glyphicon glyphicon-play-circle" aria-hidden="true"></span></button>
+						<div class="dropdown">
+							<a class="btn btn-primary dropdown-toggle form-control" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span>
+								Add
+								<span class="caret"></span>
+							</a>
+							<ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+								<li><a href="#">Track</a></li>
+								<li><a href="#">Riff</a></li>
+							</ul>		
+						</div>
 					</div>
+
 					<div class="col-md-4">
-						<button class="btn btn-primary form-control">Add track  <span class="glyphicon glyphicon-plus" aria-hidden="true"></span></button>
+						<div class="dropdown">
+							<a class="btn btn-default dropdown-toggle form-control" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"><span class="glyphicon glyphicon-play-circle" aria-hidden="true"></span>
+								Play/Export
+								<span class="caret"></span>
+							</a>
+							<ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+								<li><a href="#">
+									<span class="glyphicon glyphicon-play-circle" aria-hidden="true"> Play/Pause </span>
+								</a></li>
+								<li><a href="#"><span class=" glyphicon glyphicon-download-alt" aria-hidden="true"></span> Download full song</a></li>
+							</ul>		
+						</div>
 					</div>
+
 					<div class="col-md-4">
-						<button class="btn btn-primary form-control">Disscussion board  <span class="glyphicon glyphicon-comment" aria-hidden="true"></span></button>
+						<a href="../discussionBoard/index.html" class="btn btn-default form-control"><span class="glyphicon glyphicon-comment" aria-hidden="true"></span> Discussion Board</a>
 					</div>
 				</div>
 				</p>
 				<div class="row">							
 					<div class="col-md-4">
-						<button class="btn btn-primary form-control">Download full song  <span class=" glyphicon glyphicon-download-alt" aria-hidden="true"></span></button>					
-					</div>
-					<div class="col-md-4">
-						<button class="btn btn-success form-control">Save  <span class=" glyphicon glyphicon-floppy-disk" aria-hidden="true"></span></button>
-					</div>
-					<div class="col-md-4">
-						<button class="btn btn-danger form-control">Discard changes  <span class="glyphicon glyphicon-remove-sign" aria-hidden="true"></span></button>
 					</div>
 				</div>
 			</div>						
@@ -148,36 +165,28 @@
 			<div class="col-md-8">
 				<div class="row">
 					<div class="col-md-4">
-						<p><b>Volume</b></p>
-						<div id="volumeSlider"></div>
+						<label for="volumeSlider">Volume</label>
+						<input type="range" id="volumeSlider">
 					</div>
-					<div class="col-md-4">							
-							<p><b>Pan</b></p>
-							<div class="row">								
-								<div class="col-md-2">
-									Left
-								</div>
-								<div class="col-md-8">
-									<div id="panLR"></div>
-								</div>
-								<div class="col-md-1">
-									Right
-								</div>																
-							</div>					
+					<div class="col-md-4">
+						<label for="">Pan</label>	 <br/>			
+						<label for="">L </label>
+						<input type="range" id="panSlider">
+						<label for="">R </label>				
+										
 					</div>
 				</div>		
 				<div class="row">
-					<div class="col-md-4">	
-							<p><b>Bass</b></p>
-							<div id="bassSlider"></div>
+					<div class="col-md-4">
+						<label for="bassSlider">Bass</label>	
+						<input type="range" id="bassSlider">
 					</div>
 					<div class="col-md-4">
-							<p><b>Middle</b></p>
-							<div id="middleSlider"></div>
+						<label for="middleSlider">Middle</label>
+						<input type="range" id="middleSlider">
 					</div>
-					<div class="col-md-4">			
-							<p><b>Treble</b></p>
-							<div id="trebleSlider"></div>
+					<div class="col-md-4">
+						<label for="trebbleSlider">Trebble</label><input type="range" id="trebbleSlider">
 					</div>									
 				</div>
 				
@@ -191,19 +200,22 @@
 						<b>Duration</b>
 					</div>
 					<div class="col-md-2">
-						2 mins
+						0:14
 					</div>
 					<div class="col-md-4">
 						<b>BPM</b>
 					</div>
 					<div class="col-md-2">
-						50
+						90
 					</div>
 				</div>
+
 				<div class="row">
-					<div class="col-md-4">
+					<div class="col-md-6">
+						<button class="btn btn-success form-control">Save  <span class=" glyphicon glyphicon-floppy-disk" aria-hidden="true"></span></button>
 					</div>
-					<div class="col-md-2">
+					<div class="col-md-6">
+									<button class="btn btn-danger form-control">Discard changes  <span class="glyphicon glyphicon-remove-sign" aria-hidden="true"></span></button>
 					</div>
 				</div>				
 			</div>

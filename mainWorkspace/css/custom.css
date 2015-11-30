@@ -79,3 +79,8 @@ h2, h3{
 .comment{
 	position: relative;
 }
+
+#panSlider{
+	display: inline;
+	width: calc(100% - 2*15px);
+}

@@ -19,10 +19,10 @@ function a() {
   		$('#theTrackContainer').append(str);		  			
 		return false;
 	});
-	$('#volumeSlider').slider();
-	$('#bassSlider').slider();
-	$('#middleSlider').slider();
-	$('#trebleSlider').slider();
+	// $('#volumeSlider').slider();
+	// $('#bassSlider').slider();
+	// $('#middleSlider').slider();
+	// $('#trebleSlider').slider();
 	$('#panLR').slider();
 	$("[data-toggle='popover']").popover();
 	var offset = $('#img_Test').offset();
