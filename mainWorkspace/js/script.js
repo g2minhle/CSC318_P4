@@ -1,26 +1,31 @@
-$("#submit").on("click", function(e){
-  e.preventDefault();
-  var newPost = $("#post-2").clone();
-  
-  var date = {
-    time: new Date().getHours() + ":" +
-         ((new Date().getMinutes() > 10) ? new Date().getMinutes()
-                                       : "0" + new Date().getMinutes()),
-    date: new Date().getMonth() + "/" +
-          new Date().getDay() + "/" +
-          new Date().getFullYear()
-  }
+function a() {
+	$('#img_Test').draggable({ 
+		containment: 'parent', 
+		axis: 'x' ,
+		start : function(){
+			console.log('start');
+			var offset = $('#img_Test').offset();
+			$('#btn_Note').offset({ top: offset.top, left: offset.left});
+		},
+		drag : function(){
+			console.log('draging');
+			var offset = $('#img_Test').offset();
+			$('#btn_Note').offset({ top: offset.top, left: offset.left});			
+		}});
+	$('#img_Test').contextmenu(function(e) {
+		var id = Math.random(); 		
+		var str = '<button							id = "btn_'+ id+'"							type="button" class="btn btn-xs btn-warning comment"							data-toggle="popover" title="Popover title"							data-content="And heres some amazing content. Its very engaging.Right?">							<span class="glyphicon glyphicon-comment" aria-hidden="true"></span>						</button>';
+		var person = prompt("Please enter your comment", "My comment");
+  		$('#theTrackContainer').append(str);		  			
+		return false;
+	});
+	$('#volumeSlider').slider();
+	$('#bassSlider').slider();
+	$('#middleSlider').slider();
+	$('#trebleSlider').slider();
+	$('#panLR').slider();
+	$("[data-toggle='popover']").popover();
+	var offset = $('#img_Test').offset();
+	$('#btn_Note').offset({ top: offset.top, left: offset.left});
 
-  newPost.find(".panel-body").html(
-    $("#input-content").val() + 
-    '<div class="post-footer">Posted at ' + date.time + ' on ' + date.date + '.</div>'                  
-  );
-
-  newPost.find("img").attr("src", "images/myAvatar.png");
-  newPost.find("figcaption").text("Elliot Smith (You)");
-
-
-  newPost.appendTo("#post-list");
-  $("#input-content").val("");
-
-});
+}

@@ -71,6 +71,11 @@ h2, h3{
 	border-color: grey;
 }
 
-.trackDisplayMode{
-	width: 100%;
+.lyric{
+	width: 50%;
+}
+
+
+.comment{
+	position: relative;
 }

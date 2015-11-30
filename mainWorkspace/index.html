@@ -2,12 +2,12 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Project Banana</title>
-
+	<title>Project Banana</title>		
 	<link rel="stylesheet" href="css/bootstrap.css">
 	<link rel="stylesheet" href="css/bootstrap-theme.css">
 	<link rel="stylesheet" href="css/custom.css">
-	<link rel="stylesheet" href="css/jquery-ui.css">
+	<link rel="stylesheet" href="css/jquery-ui.css">	
+	<style type="text/css" media="all">@import "css/annotation.css";</style>	
 </head>
 <body onload="a()">
 	<nav class="navbar navbar-default navbar-inverse">
@@ -34,24 +34,27 @@
 			<div class="col-md-12" >
 				<h2>Project Banana</h2>
 			</div>
-		</div>
+		</div>		
 		<div class="row trackList">
 			<div class="row track">
 				<div class="col-md-2 trackHeader">					
-					<div class="row">
+					<div class="row">						
 						<div class="col-md-12">
+							<p>
 							<h3>
-								Happy song							
 								<a class="btn btn-danger">
 								<span class="glyphicon glyphicon-remove" aria-hidden="true"></span> 								
 								</a>
-							</h3>	
+								Happy song															
+							</h3>
+							</p>	
 						</div>				
 					</div>
 					<div class="row">
 						<div class="col-md-12">
+							<p>
 							<div class="dropdown">
-								<a class="btn btn-primary dropdown-toggle trackDisplayMode" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+								<a class="btn btn-primary dropdown-toggle form-control" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
 									View mode
 									<span class="caret"></span>
 								</a>
@@ -59,29 +62,84 @@
 									<li><a href="#">Sheet</a></li>
 									<li><a href="#">Guitar tab</a></li>
 									<li><a href="#">wave</a></li>
-								</ul>							
-							</div>																						
+								</ul>		
+							</div>
+							</p>																						
 						</div>
 					</div>					
 				</div>
 				<div class="col-md-11 trackColumn">
-					<div class="trackContainer">
-						<img id="img_Test" class="trackLength" src="http://key4song.lingolinda.com/SheetMusic/image/Staff.jpg" >
+					<div class="trackContainer" id="theTrackContainer">
+						<img id="img_Test" class="trackLength" src="http://key4song.lingolinda.com/SheetMusic/image/Staff.jpg" />												
+						<button
+							id = "btn_Note" 
+							type="button" class="btn btn-xs btn-warning" 
+							data-toggle="popover" title="Popover title" 
+							data-content="And here's some amazing content. It's very engaging. Right?">
+							<span class="glyphicon glyphicon-comment" aria-hidden="true"></span>
+						</button>
 					</div>
 				</div>
-			</div>													
+			</div>
+			
+			<div class="row track">
+				<div class="col-md-2 trackHeader">					
+					<div class="row">
+						<div class="col-md-12">
+							<p>
+							<h3>
+								<a class="btn btn-danger">
+								<span class="glyphicon glyphicon-remove" aria-hidden="true"></span> 								
+								</a>
+								Lyric															
+							</h3>
+							</p>	
+						</div>				
+					</div>										
+				</div>
+				<div class="col-md-11 trackColumn">
+					<div class="trackContainer">
+						<input type="text"  class="form-control lyric"/>						
+					</div>
+				</div>
+			</div>
+			
+																
 		</div>
 		<div class="row">
 			<hr>
 		</div>
-		<div class="row">			
-			<div class="col-md-5">
-				Project description
-				<textarea class="form-control"></textarea>
+		<div class="row">
+			<div class="col-md-6">
+					Project description
+					<textarea class="form-control"></textarea>
 			</div>
-			<div class="col-md-4">
-				<button class="btn btn-primary"><span class="glyphicon glyphicon-comment" aria-hidden="true"></span></button>
-			</div>
+			<div class="col-md-6">
+				<p>
+				<div class="row">							
+					<div class="col-md-4">
+						<button class="btn btn-primary form-control">Play  <span class="glyphicon glyphicon-play-circle" aria-hidden="true"></span></button>
+					</div>
+					<div class="col-md-4">
+						<button class="btn btn-primary form-control">Add track  <span class="glyphicon glyphicon-plus" aria-hidden="true"></span></button>
+					</div>
+					<div class="col-md-4">
+						<button class="btn btn-primary form-control">Disscussion board  <span class="glyphicon glyphicon-comment" aria-hidden="true"></span></button>
+					</div>
+				</div>
+				</p>
+				<div class="row">							
+					<div class="col-md-4">
+						<button class="btn btn-primary form-control">Download full song  <span class=" glyphicon glyphicon-download-alt" aria-hidden="true"></span></button>					
+					</div>
+					<div class="col-md-4">
+						<button class="btn btn-success form-control">Save  <span class=" glyphicon glyphicon-floppy-disk" aria-hidden="true"></span></button>
+					</div>
+					<div class="col-md-4">
+						<button class="btn btn-danger form-control">Discard changes  <span class="glyphicon glyphicon-remove-sign" aria-hidden="true"></span></button>
+					</div>
+				</div>
+			</div>						
 		</div>
 		<div class="row">
 			<hr>
@@ -124,31 +182,41 @@
 				</div>
 				
 			</div>
-			<div class="col-md-4" style="background-color:red">
-								<select>
-				  <option value="volvo">Volvo</option>
-				  <option value="saab">Saab</option>
-				  <option value="opel">Opel</option>
-				  <option value="audi">Audi</option>
-				</select>
+			<div class="col-md-4">
+				<div class="row">
+					<h3>Status</h3>
+				</div>
+				<div class="row">
+					<div class="col-md-4">
+						<b>Duration</b>
+					</div>
+					<div class="col-md-2">
+						2 mins
+					</div>
+					<div class="col-md-4">
+						<b>BPM</b>
+					</div>
+					<div class="col-md-2">
+						50
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-4">
+					</div>
+					<div class="col-md-2">
+					</div>
+				</div>				
 			</div>
 
 		</div>
 	</div>
-
-	<script src="js/jquery.js"></script>
-	<script src="js/bootstrap.js"></script>
-	<script src="js/script.js"></script>
-	<script src="js/jquery-ui.js"></script>
-	<script type="text/javascript">
-		function a(){
-			$( "#img_Test" ).draggable({ containment: "parent",  axis: "x" });
-			$( "#volumeSlider" ).slider();
-			$( "#bassSlider" ).slider();
-			$( "#middleSlider" ).slider();
-			$( "#trebleSlider" ).slider();
-			$( "#panLR" ).slider();
-		}
-	</script>
+	
+	<script src="js/jquery.js"></script>	
+	<script src="js/jquery-ui.js"></script>			
+	<script src="js/bootstrap.js"></script>	
+	<script type="text/javascript" src="js/jquery.annotate.js"></script>		
+	<script src="js/script.js"></script>	
+</script>		
 </body>
 </html>
+	
