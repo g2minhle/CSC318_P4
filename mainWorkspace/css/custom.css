@@ -69,6 +69,7 @@ h2, h3{
 	border-left: solid;
 	border-right: solid;
 	border-color: grey;
+	padding: 10px;
 }
 
 .lyric{
@@ -83,4 +84,11 @@ h2, h3{
 #panSlider{
 	display: inline;
 	width: calc(100% - 2*15px);
+}
+.close-track{
+	float: right;
+}
+
+.tabs{
+	display: none;
 }

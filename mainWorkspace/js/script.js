@@ -28,4 +28,26 @@ function a() {
 	var offset = $('#img_Test').offset();
 	$('#btn_Note').offset({ top: offset.top, left: offset.left});
 
+	$('.js-close-track').on('click', function(e){
+		// removing track
+		$(this).closest('.track').hide();
+	});
+
+	$('.js-display-sheet-tab').on('click', function(){
+		var trackColumn = $(this).closest('.track');
+
+		//hide all track representations
+		trackColumn.find('.trackLength').hide();
+		trackColumn.find('.sheet').show();
+	});
+	$('.js-display-guitar-tab').on('click', function(){
+		var trackColumn = $(this).closest('.track');
+
+		//hide all track representations
+		trackColumn.find('.trackLength').hide();
+
+		// show only the tabs
+		trackColumn.find('.tabs').show();
+	});
+
 }
