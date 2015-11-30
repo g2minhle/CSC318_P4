@@ -1,0 +1,81 @@
+html, body {
+    height: 90%;
+}
+
+h2, h3{
+	margin-top: 0px;
+}
+
+.navbar{
+    height: 10%;
+}
+
+.row{
+	width : 100%;
+}
+
+.container{
+	margin-left: 2%;
+	width : 98%;
+	height: 100%;
+}
+
+.header{
+	height: 5%;	
+	max-height: 5%;
+}
+
+.trackList{
+	height: 55%;
+	max-height: 70%;
+	overflow-y:scroll;
+	overflow-x:none;
+}
+
+.mixingPanel{
+	height: 20%;
+	max-height: 20%;
+}
+
+.track{
+	width : 100%;
+	margin-left: 2%;
+	border-bottom: solid;
+	border-bottom-color: gray;
+}
+
+.header{
+	text-align: center;
+}
+
+.trackLength{
+	height: 100%;
+	border: solid;
+	border-color: black;
+	margin: 0%;
+}
+
+.trackHeader{
+	width: 30%;
+	max-width: 300px;
+}
+
+.trackColumn{
+	width: 77%;
+}
+
+.trackContainer{
+	width: 100%;
+	border-left: solid;
+	border-right: solid;
+	border-color: grey;
+}
+
+.lyric{
+	width: 50%;
+}
+
+
+.comment{
+	position: relative;
+}

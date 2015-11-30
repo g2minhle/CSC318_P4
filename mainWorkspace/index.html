@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Project Banana</title>		
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="css/bootstrap-theme.css">
+	<link rel="stylesheet" href="css/custom.css">
+	<link rel="stylesheet" href="css/jquery-ui.css">	
+	<style type="text/css" media="all">@import "css/annotation.css";</style>	
+</head>
+<body onload="a()">
+	<nav class="navbar navbar-default navbar-inverse">
+		<div class="container-fluid">
+			<!-- Brand and toggle get grouped for better mobile display -->
+			<div class="navbar-header">
+				<a class="navbar-brand" href="#">Polaris mixer </a>
+			</div>
+
+			<!-- Collect the nav links, forms, and other content for toggling -->
+			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+				<ul class="nav navbar-nav">
+					<li><a href="#"><span class="glyphicon glyphicon-home" aria-hidden="true"></span> Home </a></li>
+				</ul>
+				<ul class="nav navbar-nav navbar-right">
+					<li><a href="#"><span class="glyphicon glyphicon-wrench" aria-hidden="true"></span> Account setting</a></li>
+					<li><a href="#"><span class="glyphicon glyphicon-off" aria-hidden="true"></span> Log out</a></li>
+				</ul>
+			</div><!-- /.navbar-collapse -->
+		</div><!-- /.container-fluid -->
+	</nav>
+	<div id="wrapper" class="container">
+		<div class="row header">
+			<div class="col-md-12" >
+				<h2>Project Banana</h2>
+			</div>
+		</div>		
+		<div class="row trackList">
+			<div class="row track">
+				<div class="col-md-2 trackHeader">					
+					<div class="row">						
+						<div class="col-md-12">
+							<p>
+							<h3>
+								<a class="btn btn-danger">
+								<span class="glyphicon glyphicon-remove" aria-hidden="true"></span> 								
+								</a>
+								Happy song															
+							</h3>
+							</p>	
+						</div>				
+					</div>
+					<div class="row">
+						<div class="col-md-12">
+							<p>
+							<div class="dropdown">
+								<a class="btn btn-primary dropdown-toggle form-control" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+									View mode
+									<span class="caret"></span>
+								</a>
+								<ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+									<li><a href="#">Sheet</a></li>
+									<li><a href="#">Guitar tab</a></li>
+									<li><a href="#">wave</a></li>
+								</ul>		
+							</div>
+							</p>																						
+						</div>
+					</div>					
+				</div>
+				<div class="col-md-11 trackColumn">
+					<div class="trackContainer" id="theTrackContainer">
+						<img id="img_Test" class="trackLength" src="http://key4song.lingolinda.com/SheetMusic/image/Staff.jpg" />												
+						<button
+							id = "btn_Note" 
+							type="button" class="btn btn-xs btn-warning" 
+							data-toggle="popover" title="Popover title" 
+							data-content="And here's some amazing content. It's very engaging. Right?">
+							<span class="glyphicon glyphicon-comment" aria-hidden="true"></span>
+						</button>
+					</div>
+				</div>
+			</div>
+			
+			<div class="row track">
+				<div class="col-md-2 trackHeader">					
+					<div class="row">
+						<div class="col-md-12">
+							<p>
+							<h3>
+								<a class="btn btn-danger">
+								<span class="glyphicon glyphicon-remove" aria-hidden="true"></span> 								
+								</a>
+								Lyric															
+							</h3>
+							</p>	
+						</div>				
+					</div>										
+				</div>
+				<div class="col-md-11 trackColumn">
+					<div class="trackContainer">
+						<input type="text"  class="form-control lyric"/>						
+					</div>
+				</div>
+			</div>
+			
+																
+		</div>
+		<div class="row">
+			<hr>
+		</div>
+		<div class="row">
+			<div class="col-md-6">
+					Project description
+					<textarea class="form-control"></textarea>
+			</div>
+			<div class="col-md-6">
+				<p>
+				<div class="row">							
+					<div class="col-md-4">
+						<button class="btn btn-primary form-control">Play  <span class="glyphicon glyphicon-play-circle" aria-hidden="true"></span></button>
+					</div>
+					<div class="col-md-4">
+						<button class="btn btn-primary form-control">Add track  <span class="glyphicon glyphicon-plus" aria-hidden="true"></span></button>
+					</div>
+					<div class="col-md-4">
+						<button class="btn btn-primary form-control">Disscussion board  <span class="glyphicon glyphicon-comment" aria-hidden="true"></span></button>
+					</div>
+				</div>
+				</p>
+				<div class="row">							
+					<div class="col-md-4">
+						<button class="btn btn-primary form-control">Download full song  <span class=" glyphicon glyphicon-download-alt" aria-hidden="true"></span></button>					
+					</div>
+					<div class="col-md-4">
+						<button class="btn btn-success form-control">Save  <span class=" glyphicon glyphicon-floppy-disk" aria-hidden="true"></span></button>
+					</div>
+					<div class="col-md-4">
+						<button class="btn btn-danger form-control">Discard changes  <span class="glyphicon glyphicon-remove-sign" aria-hidden="true"></span></button>
+					</div>
+				</div>
+			</div>						
+		</div>
+		<div class="row">
+			<hr>
+		</div>
+		<div class="row mixingPanel">
+			<div class="col-md-8">
+				<div class="row">
+					<div class="col-md-4">
+						<p><b>Volume</b></p>
+						<div id="volumeSlider"></div>
+					</div>
+					<div class="col-md-4">							
+							<p><b>Pan</b></p>
+							<div class="row">								
+								<div class="col-md-2">
+									Left
+								</div>
+								<div class="col-md-8">
+									<div id="panLR"></div>
+								</div>
+								<div class="col-md-1">
+									Right
+								</div>																
+							</div>					
+					</div>
+				</div>		
+				<div class="row">
+					<div class="col-md-4">	
+							<p><b>Bass</b></p>
+							<div id="bassSlider"></div>
+					</div>
+					<div class="col-md-4">
+							<p><b>Middle</b></p>
+							<div id="middleSlider"></div>
+					</div>
+					<div class="col-md-4">			
+							<p><b>Treble</b></p>
+							<div id="trebleSlider"></div>
+					</div>									
+				</div>
+				
+			</div>
+			<div class="col-md-4">
+				<div class="row">
+					<h3>Status</h3>
+				</div>
+				<div class="row">
+					<div class="col-md-4">
+						<b>Duration</b>
+					</div>
+					<div class="col-md-2">
+						2 mins
+					</div>
+					<div class="col-md-4">
+						<b>BPM</b>
+					</div>
+					<div class="col-md-2">
+						50
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-4">
+					</div>
+					<div class="col-md-2">
+					</div>
+				</div>				
+			</div>
+
+		</div>
+	</div>
+	
+	<script src="js/jquery.js"></script>	
+	<script src="js/jquery-ui.js"></script>			
+	<script src="js/bootstrap.js"></script>	
+	<script type="text/javascript" src="js/jquery.annotate.js"></script>		
+	<script src="js/script.js"></script>	
+</script>		
+</body>
+</html>
+	
