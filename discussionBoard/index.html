@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <title>Document</title>
@@ -8,8 +9,29 @@
   <link rel="stylesheet" href="css/bootstrap-theme.css">
   <link rel="stylesheet" href="css/custom.css">
 </head>
-<body>
 
+<body>
+  <nav class="navbar navbar-default navbar-inverse">
+    <div class="container-fluid">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <a class="navbar-brand" href="#">Polaris mixer </a>
+      </div>
+
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav">
+          <li><a href="#"><span class="glyphicon glyphicon-home" aria-hidden="true"></span> Home </a></li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="#"><span class="glyphicon glyphicon-wrench" aria-hidden="true"></span> Account setting</a></li>
+          <li><a href="#"><span class="glyphicon glyphicon-off" aria-hidden="true"></span> Log out</a></li>
+        </ul>
+      </div>
+      <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container-fluid -->
+  </nav>
   <div id="wrapper" class="container">
     <div class="row">
       <nav id="sidebar" class="col-sm-3">
@@ -18,13 +40,13 @@
           <li><a href="#">Lyrics theme for song #6</a></li>
           <li><a href="#">Echo use for Song #3</a></li>
           <li><a href="#">Cover ideas for next gig?</a></li>
-          
+
         </ul>
 
         <ul class="nav nav-pills nav-stacked">
-          <li class="btn btn-default">Create new Thread</li>  
+          <li class="btn btn-default">Create new Thread</li>
         </ul>
-        
+
       </nav>
 
       <main class="col-sm-9">
@@ -33,7 +55,7 @@
             <h1>Discussion Board</h1>
           </div>
 
-                      
+
         </div>
 
         <div id="post-list" class="post-list">
@@ -69,25 +91,27 @@
                   <div class="post-footer">
                     Posted at 16:15 on 11/13/2015.
                   </div>
-                  
+
                 </div>
               </div>
             </div>
-          </div>    
+          </div>
         </div>
 
 
-        <br /><br /><br />
+        <br />
+        <br />
+        <br />
         <div class="row">
           <figure class="user-avatar col-sm-2 user-avatar">
             <img src="images/myAvatar.png" alt="">
             <figcaption>Elliot Smith (You)</figcaption>
           </figure>
-          <div class="col-sm-10">            
+          <div class="col-sm-10">
             <div class="form-group">
               <label for="">Insert your comment</label>
               <textarea id="input-content" class="form-control"></textarea>
-              
+
 
               <button id="submit" type="submit" class="btn btn-primary submit-button pull-right">Submit</button>
             </div>
@@ -103,4 +127,5 @@
   <script src="js/bootstrap.js"></script>
   <script src="js/script.js"></script>
 </body>
+
 </html>
