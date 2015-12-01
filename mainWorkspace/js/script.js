@@ -27,5 +27,22 @@ function a() {
 	$("[data-toggle='popover']").popover();
 	var offset = $('#img_Test').offset();
 	$('#btn_Note').offset({ top: offset.top, left: offset.left});
+}
 
+function cmd_Save(){
+	$.notify("Change saved", "success");
+}
+
+
+function cmd_addTracK(){
+	$('#cmd_Upload').click();
+}
+
+function input_fileUploaded(){
+	$.notify("Track added", "success");
+}
+
+function cmd_Play(){
+	var audio = new Audio('./NyanCat.mp3');
+	audio.play();
 }
