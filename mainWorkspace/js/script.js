@@ -14,20 +14,23 @@ function a() {
 		}});
 
 	$('.js-track-images .trackLength').contextmenu(function(e) {
+		var person = prompt("Please enter your comment", "My comment");
+  	
+
 		var id = Math.random(); 		
 		var parentOffset = $(this).parent().offset();    
    	var relX = e.pageX - parentOffset.left;
 
 		var str = $('<button id = "btn_'+ id+'" type="button"' +
 						'class="btn btn-xs btn-warning comment"' +
-						'data-toggle="popover" title="Popover title"' +
-						'data-content="And heres some amazing content. Its very engaging.Right?">' +
+						'data-toggle="popover"'+
+						'data-content="' + person +'">' +
 						'<span class="glyphicon glyphicon-comment" aria-hidden="true"></span>' +
 												'</button>');
 
-		str.css('left', relX);
-		var person = prompt("Please enter your comment", "My comment");
-  		$('#theTrackContainer').append(str);		  			
+		str.css('left', relX).popover();  	
+		$('#theTrackContainer').append(str);		
+				
 		return false;
 	});
 	// $('#volumeSlider').slider();
