@@ -69,18 +69,29 @@ h2, h3{
 	border-left: solid;
 	border-right: solid;
 	border-color: grey;
-}
+	padding: 10px;
 
+	position: relative;
+}
 .lyric{
 	width: 50%;
 }
 
 
 .comment{
-	position: relative;
+	position: absolute;
+	top: 10px;
 }
 
 #panSlider{
 	display: inline;
 	width: calc(100% - 2*15px);
+}
+.close-track{
+	float: right;
+}
+
+/* Show sheet by default */
+.tabs, .waves{
+	display: none;
 }
