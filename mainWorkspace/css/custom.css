@@ -69,9 +69,7 @@ h2, h3{
 	border-left: solid;
 	border-right: solid;
 	border-color: grey;
-}
-
-.comment{
+	padding: 10px;
 	position: relative;
 }
 
@@ -93,4 +91,22 @@ h2, h3{
 
 .selected{
 	background: royalblue;
+}
+
+.comment{
+	position: absolute;
+	top: 10px;
+}
+
+#panSlider{
+	display: inline;
+	width: calc(100% - 2*15px);
+}
+.close-track{
+	float: right;
+}
+
+/* Show sheet by default */
+.tabs, .waves{
+	display: none;
 }
