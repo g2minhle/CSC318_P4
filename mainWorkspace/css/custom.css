@@ -71,11 +71,26 @@ h2, h3{
 	border-color: grey;
 }
 
-.lyric{
-	width: 50%;
-}
-
-
 .comment{
 	position: relative;
+}
+
+.lyric{
+	margin-left: 3%;
+	width: 94%;
+}
+
+.divLyric{
+	width: 70%;
+	border:solid;
+	border-color : #C0C0C0;
+	display: inline-block;
+}
+
+.track:hover{
+	background-color: lightblue;
+}
+
+.selected{
+	background: royalblue;
 }

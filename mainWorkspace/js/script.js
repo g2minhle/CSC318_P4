@@ -1,4 +1,8 @@
 function a() {
+	$('#img_Test3').draggable({ containment: 'parent', axis: 'x' });
+	$('#img_Test2').draggable({ containment: 'parent', axis: 'x' });
+	$('#img_Test4').draggable({ containment: 'parent', axis: 'x' });
+	$('#div_Lyric').draggable({ containment: 'parent', axis: 'x' });
 	$('#img_Test').draggable({ 
 		containment: 'parent', 
 		axis: 'x' ,
@@ -30,7 +34,7 @@ function a() {
 }
 
 function cmd_Save(){
-	$.notify("Change saved", "success");
+	$.notify('Change saved', 'success');
 }
 
 
@@ -39,10 +43,15 @@ function cmd_addTracK(){
 }
 
 function input_fileUploaded(){
-	$.notify("Track added", "success");
+	$.notify('Track added', 'success');
 }
 
-function cmd_Play(){
-	var audio = new Audio('./NyanCat.mp3');
-	audio.play();
+function cmd_play(){
+	var audio = new Audio('./fullSong.mp3');
+	audio.play();	
+}
+
+function cmd_addLyric(){
+	$('#div_lyric').show();
+	$('#input_Lyric').focus();	
 }
