@@ -40,7 +40,7 @@ span
     line-height: normal;
     display:inline-block;
     vertical-align: middle;
-    font-size: 20px;
+    font-size: 19px;
 }
 
 .col-sm-8 {
@@ -54,7 +54,7 @@ span
 
 #circle2 {
     position: relative;
-    bottom: 100px;
+    bottom: 175px;
     left:840px;
     width:60px;
 	height:60px;
@@ -65,7 +65,7 @@ span
 
 #circle3 {
     position: relative;
-    bottom: -395px;
+    bottom: -320px;
     left:370px;
     width:60px;
 	height:60px;
@@ -78,4 +78,8 @@ span
     font-size: 60px;
     position: relative;
     bottom: 12px;
+}
+
+#add2 {
+    text-decoration: none;
 }
