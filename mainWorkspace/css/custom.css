@@ -70,15 +70,17 @@ h2, h3{
 	border-right: solid;
 	border-color: grey;
 	padding: 10px;
-}
 
+	position: relative;
+}
 .lyric{
 	width: 50%;
 }
 
 
 .comment{
-	position: relative;
+	position: absolute;
+	top: 10px;
 }
 
 #panSlider{
@@ -89,6 +91,7 @@ h2, h3{
 	float: right;
 }
 
-.tabs{
+/* Show sheet by default */
+.tabs, .waves{
 	display: none;
 }

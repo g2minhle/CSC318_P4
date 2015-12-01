@@ -58,8 +58,9 @@
 									<span class="caret"></span>
 								</a>
 								<ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-									<li><a href="#" class="js-display-sheet-tab">Sheet</a></li>
-									<li><a class="js-display-guitar-tab" href="#">Guitar tab</a></li>
+									<li><a href="#" class="js-display-sheet">Sheet</a></li>
+									<li><a class="js-display-tab" href="#">Guitar tab</a></li>
+									<li><a class="js-display-wave" href="#">Waves</a></li>
 									<!-- <li><a href="#">wave</a></li> -->
 								</ul>		
 							</div>
@@ -69,15 +70,21 @@
 				</div>
 				<div class="col-md-11 trackColumn">
 					<div class="trackContainer" id="theTrackContainer">
-						<div id="img_Test">
-							<img  class="trackLength sheet" src="images/guitar-sheet.png" />						
-							<img class="trackLength tabs" src="images/guitar-tab.png" />						
+						<div id="img_Test" class="js-track-images">
+							<img  class="trackLength"
+								src="images/guitar-sheet.png"
+								data-srctabs="images/guitar-tab.png"
+								data-srcwaves="images/guitar-wave.png"
+								data-srcsheets="images/guitar-sheet.png"
+							/>						
+<!-- 							<img class="trackLength tabs" src="images/guitar-tab.png" />
+							<img class="trackLength waves" src="images/guitar-wave.png" />						 -->
 						</div>
 
 <!-- 						<img id="img_Test" class="trackLength" src="http://key4song.lingolinda.com/SheetMusic/image/Staff.jpg" />												 -->
 						<button
 							id = "btn_Note" 
-							type="button" class="btn btn-xs btn-warning" 
+							type="button" class="btn btn-xs btn-warning comment" 
 							data-toggle="popover" title="Popover title" 
 							data-content="And here's some amazing content. It's very engaging. Right?">
 							<span class="glyphicon glyphicon-comment" aria-hidden="true"></span>
