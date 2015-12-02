@@ -93,6 +93,10 @@ h2, h3{
 	background: royalblue;
 }
 
+.selected:hover{
+	background: royalblue;
+}
+
 .comment{
 	position: absolute;
 	top: 10px;
@@ -104,6 +108,7 @@ h2, h3{
 }
 .close-track{
 	float: right;
+	color: red;
 }
 
 /* Show sheet by default */

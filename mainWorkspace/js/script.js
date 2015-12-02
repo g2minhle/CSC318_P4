@@ -1,7 +1,4 @@
-function a() {
-	$('#img_Test3').draggable({ containment: 'parent', axis: 'x' });
-	$('#img_Test2').draggable({ containment: 'parent', axis: 'x' });
-	$('#img_Test4').draggable({ containment: 'parent', axis: 'x' });
+function a() {	
 	$('#div_Lyric').draggable({ containment: 'parent', axis: 'x' });
 	$('.js-track-images .trackLength').draggable({ 
 		containment: 'parent', 
@@ -19,11 +16,11 @@ function a() {
 
 	$('.js-track-images .trackLength').contextmenu(function(e) {
 		var person = prompt("Please enter your comment", "My comment");
-  	
-
+  		if (person == null) return;
 		var id = Math.random(); 		
 		var parentOffset = $(this).parent().offset();    
-   	var relX = e.pageX - parentOffset.left;
+		var relX = e.pageX - parentOffset.left;
+		var relY = e.pageY - parentOffset.top;
 
 		var str = $('<button id = "btn_'+ id+'" type="button"' +
 						'class="btn btn-xs btn-warning comment"' +
@@ -32,7 +29,8 @@ function a() {
 						'<span class="glyphicon glyphicon-comment" aria-hidden="true"></span>' +
 												'</button>');
 
-		str.css('left', relX).popover();  	
+		str.css('left', relX).popover();
+		str.css('top', relY).popover();  	
 		$('#theTrackContainer').append(str);		
 				
 		return false;
@@ -48,13 +46,19 @@ function a() {
 	$('#btn_Note').offset({ top: offset.top, left: offset.left});
 }
 
-function cmd_Save(){
+function cmd_save(){
 	$.notify('Change saved', 'success');
 }
 
 $('.js-close-track').on('click', function(e){
 	// removing track
 	$(this).closest('.track').hide();
+});
+
+$('.track').on('click', function(e){
+	if($(this).attr('id') == 'div_lyric') return;
+	$('.track').removeClass('selected');
+	$(this).addClass('selected');
 });
 
 
@@ -88,6 +92,7 @@ function cmd_addTracK(){
 
 function input_fileUploaded(){
 	$.notify('Track added', 'success');
+	tracks = $(".track:hidden").first().show();
 }
 
 function cmd_play(){

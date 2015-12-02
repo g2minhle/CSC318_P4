@@ -39,12 +39,60 @@
 				<div class="col-md-2 trackHeader">					
 					<div class="row">						
 						<div class="col-md-12">
-							<a href="#" class="close-track js-close-track"><span class="glyphicon glyphicon-remove" aria-hidden="true"></span></a>							
+							<a href="#" class="close-track js-close-track">
+								<span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+							</a>							
 							<p>
-
-
-							<h3 contenteditable>
-								Acoustic Guitar															
+								<h3 contenteditable>
+									Acoustic Guitar															
+								</h3>
+							</p>	
+						</div>				
+					</div>
+					<div class="row">
+						<div class="col-md-12">
+							<div class="dropdown">
+								<a class="btn btn-primary dropdown-toggle form-control" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+									View mode
+									<span class="caret"></span>
+								</a>
+								<ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+									<li><a href="#" class="js-display-sheet">Sheet</a></li>
+									<li><a class="js-display-tab" href="#">Guitar tab</a></li>
+									<li><a class="js-display-wave" href="#">Waves</a></li>
+								</ul>		
+							</div>
+						</div>
+					</div>					
+				</div>
+				<div class="col-md-11 trackColumn">
+					<div class="trackContainer js-track-images" id="theTrackContainer">
+						<img  class="trackLength"
+							src="images/guitar-sheet.png"
+							data-srctabs="images/guitar-tab.png"
+							data-srcwaves="images/guitar-wave.png"
+							data-srcsheets="images/guitar-sheet.png"
+						/>
+						<button
+							id = "btn_Note" 
+							type="button" class="btn btn-xs btn-warning comment" 
+							data-toggle="popover" title="Popover title" 
+							data-content="And here's some amazing content. It's very engaging. Right?">
+							<span class="glyphicon glyphicon-comment" aria-hidden="true"></span>
+						</button>
+					</div>
+				</div>
+			</div>
+			<div class="row track" id="div_track2">
+				<div class="col-md-2 trackHeader">					
+					<div class="row">						
+						<div class="col-md-12">
+							<a href="#" class="close-track js-close-track">
+								<span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+							</a>
+							<p>
+							<h3>
+								Happy song #2														
 							</h3>
 							</p>	
 						</div>				
@@ -60,92 +108,31 @@
 									<li><a href="#" class="js-display-sheet">Sheet</a></li>
 									<li><a class="js-display-tab" href="#">Guitar tab</a></li>
 									<li><a class="js-display-wave" href="#">Waves</a></li>
-									<!-- <li><a href="#">wave</a></li> -->
 								</ul>		
 							</div>
 						</div>
 					</div>					
 				</div>
 				<div class="col-md-11 trackColumn">
-					<div class="trackContainer" id="theTrackContainer">
-						<div id="img_Test" class="js-track-images">
-							<img  class="trackLength"
-								src="images/guitar-sheet.png"
-								data-srctabs="images/guitar-tab.png"
-								data-srcwaves="images/guitar-wave.png"
-								data-srcsheets="images/guitar-sheet.png"
-							/>						
-<!-- 							<img class="trackLength tabs" src="images/guitar-tab.png" />
-							<img class="trackLength waves" src="images/guitar-wave.png" />						 -->
-						</div>
-
-<!-- 						<img id="img_Test" class="trackLength" src="http://key4song.lingolinda.com/SheetMusic/image/Staff.jpg" />												 -->
-						<button
-							id = "btn_Note" 
-							type="button" class="btn btn-xs btn-warning comment" 
-							data-toggle="popover" title="Popover title" 
-							data-content="And here's some amazing content. It's very engaging. Right?">
-							<span class="glyphicon glyphicon-comment" aria-hidden="true"></span>
-						</button>
+					<div class="trackContainer js-track-images" id="theTrackContainer2">
+						<img  class="trackLength"
+							src="images/guitar-sheet.png"
+							data-srctabs="images/guitar-tab.png"
+							data-srcwaves="images/guitar-wave.png"
+							data-srcsheets="images/guitar-sheet.png"
+						/>												
 					</div>
 				</div>
-			</div>
-			
-			
-			<div class="row track" id="div_track2">
+			</div>						
+			<div class="row track" id="div_track3">
 				<div class="col-md-2 trackHeader">					
 					<div class="row">						
 						<div class="col-md-12">
+							<a href="#" class="close-track js-close-track">
+								<span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+							</a>
 							<p>
 							<h3>
-								<a class="btn btn-danger" onclick="$('#div_track2').hide()">
-								<span class="glyphicon glyphicon-remove" aria-hidden="true"></span> 								
-								</a>
-								Happy song #2														
-							</h3>
-							</p>	
-						</div>				
-					</div>
-					<div class="row">
-						<div class="col-md-12">
-							<div class="dropdown">
-								<a class="btn btn-primary dropdown-toggle form-control" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-									View mode
-									<span class="caret"></span>
-								</a>
-								<ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-									<li><a href="#">Sheet</a></li>
-									<li><a href="#">Guitar tab</a></li>
-									<li><a href="#">wave</a></li>
-								</ul>		
-							</div>
-						</div>
-					</div>					
-				</div>
-				<div class="col-md-11 trackColumn">
-					<div class="trackContainer" id="theTrackContainer">
-						<img id="img_Test2" class="trackLength" src="http://key4song.lingolinda.com/SheetMusic/image/Staff.jpg" />												
-						<button
-							id = "btn_Note" 
-							type="button" class="btn btn-xs btn-warning" 
-							data-toggle="popover" title="Popover title" 
-							data-content="And here's some amazing content. It's very engaging. Right?">
-							<span class="glyphicon glyphicon-comment" aria-hidden="true"></span>
-						</button>
-					</div>
-				</div>
-			</div>
-			
-			
-			<div class="row track selected" id="div_track3">
-				<div class="col-md-2 trackHeader">					
-					<div class="row">						
-						<div class="col-md-12">
-							<p>
-							<h3>
-								<a class="btn btn-danger" onclick="$('#div_track3').hide()">
-								<span class="glyphicon glyphicon-remove" aria-hidden="true"></span> 								
-								</a>
 								Happy song #3															
 							</h3>
 							</p>	
@@ -159,24 +146,22 @@
 									<span class="caret"></span>
 								</a>
 								<ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-									<li><a href="#">Sheet</a></li>
-									<li><a href="#">Guitar tab</a></li>
-									<li><a href="#">wave</a></li>
+									<li><a href="#" class="js-display-sheet">Sheet</a></li>
+									<li><a class="js-display-tab" href="#">Guitar tab</a></li>
+									<li><a class="js-display-wave" href="#">Waves</a></li>
 								</ul>		
 							</div>
 						</div>
 					</div>					
 				</div>
 				<div class="col-md-11 trackColumn">
-					<div class="trackContainer" id="theTrackContainer">
-						<img id="img_Test3" class="trackLength" src="http://key4song.lingolinda.com/SheetMusic/image/Staff.jpg" />												
-						<button
-							id = "btn_Note" 
-							type="button" class="btn btn-xs btn-warning" 
-							data-toggle="popover" title="Popover title" 
-							data-content="And here's some amazing content. It's very engaging. Right?">
-							<span class="glyphicon glyphicon-comment" aria-hidden="true"></span>
-						</button>
+					<div class="trackContainer js-track-images" id="theTrackContainer3">
+						<img  class="trackLength"
+							src="images/guitar-sheet.png"
+							data-srctabs="images/guitar-tab.png"
+							data-srcwaves="images/guitar-wave.png"
+							data-srcsheets="images/guitar-sheet.png"
+						/>												
 					</div>
 				</div>
 			</div>						
@@ -184,11 +169,11 @@
 				<div class="col-md-2 trackHeader">					
 					<div class="row">						
 						<div class="col-md-12">
+							<a href="#" class="close-track js-close-track">
+								<span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+							</a>
 							<p>
 							<h3>
-								<a class="btn btn-danger" onclick="$('#div_track4').hide()">
-								<span class="glyphicon glyphicon-remove" aria-hidden="true"></span> 								
-								</a>
 								Happy song #4															
 							</h3>
 							</p>	
@@ -202,24 +187,22 @@
 									<span class="caret"></span>
 								</a>
 								<ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-									<li><a href="#">Sheet</a></li>
-									<li><a href="#">Guitar tab</a></li>
-									<li><a href="#">wave</a></li>
+									<li><a href="#" class="js-display-sheet">Sheet</a></li>
+									<li><a class="js-display-tab" href="#">Guitar tab</a></li>
+									<li><a class="js-display-wave" href="#">Waves</a></li>
 								</ul>		
 							</div>
 						</div>
 					</div>					
 				</div>
 				<div class="col-md-11 trackColumn">
-					<div class="trackContainer" id="theTrackContainer">
-						<img id="img_Test4" class="trackLength" src="http://key4song.lingolinda.com/SheetMusic/image/Staff.jpg" />												
-						<button
-							id = "btn_Note" 
-							type="button" class="btn btn-xs btn-warning" 
-							data-toggle="popover" title="Popover title" 
-							data-content="And here's some amazing content. It's very engaging. Right?">
-							<span class="glyphicon glyphicon-comment" aria-hidden="true"></span>
-						</button>
+					<div class="trackContainer js-track-images" id="theTrackContainer3">
+						<img  class="trackLength"
+							src="images/guitar-sheet.png"
+							data-srctabs="images/guitar-tab.png"
+							data-srcwaves="images/guitar-wave.png"
+							data-srcsheets="images/guitar-sheet.png"
+						/>												
 					</div>
 				</div>
 			</div>			
@@ -239,7 +222,7 @@
 				<div class="col-md-11 trackColumn">
 					<div class="trackContainer">						
 						<div id="div_Lyric" class="divLyric">
-							<input type="text"  class="lyric form-control" id="input_Lyric"/>
+							<input type="text"  class="lyric form-control" id="input_Lyric" value="Banana banana"/>
 						</div>						
 					</div>
 				</div>
@@ -258,8 +241,6 @@
 			<div class="col-md-6">
 				<p>
 				<div class="row">							
-
-
 					<div class="col-md-4">
 						<input id="cmd_Upload" class="hidden" type='file' onchange="input_fileUploaded()"/>
 						<div class="dropdown">
@@ -268,8 +249,18 @@
 								<span class="caret"></span>
 							</a>
 							<ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-									<li><a onclick="cmd_addTracK()">Add new song  <span class="glyphicon glyphicon-music" aria-hidden="true"></span></a></li>									
-									<li><a onclick="cmd_addLyric()">Add lyric  <span class="glyphicon glyphicon-pencil" aria-hidden="true"></span></a></li>									
+									<li>
+										<a href="#" onclick="cmd_addTracK()">
+											<span class="glyphicon glyphicon-music" aria-hidden="true"></span> 
+											Add new song
+										</a>
+									</li>									
+									<li>
+										<a href="#" onclick="cmd_addLyric()">
+											<span class="glyphicon glyphicon-pencil" aria-hidden="true"></span>
+											Add lyric  
+										</a>
+									</li>									
 							</ul>		
 						</div>
 					</div>
@@ -281,10 +272,17 @@
 								<span class="caret"></span>
 							</a>
 							<ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-								<li><a href="#">
-									<span class="glyphicon glyphicon-play-circle" aria-hidden="true"> Play/Pause </span>
-								</a></li>
-								<li><a href="#"><span class=" glyphicon glyphicon-download-alt" aria-hidden="true"></span> Download full song</a></li>
+								<li>
+									<a href="#" onclick="cmd_play()">
+										<span class="glyphicon glyphicon-play-circle" aria-hidden="true"></span>
+										Play/Pause
+									</a>
+								</li>
+								<li>
+									<a href="./fullSong.mp3" download>
+										<span class=" glyphicon glyphicon-download-alt" aria-hidden="true"></span> Download full song
+									</a>
+								</li>
 							</ul>		
 						</div>
 					</div>
@@ -296,10 +294,9 @@
 				</p>
 				<div class="row">							
 					<div class="col-md-4">
-						<a href="./fullSong.mp3" class="btn btn-primary form-control" download>Download full song  <span class=" glyphicon glyphicon-download-alt" aria-hidden="true"></span></a>					
 					</div>
 					<div class="col-md-4">
-						<button class="btn btn-success form-control" onclick="cmd_Save()">Save  <span class=" glyphicon glyphicon-floppy-disk" aria-hidden="true"></span></button>
+						<button class="btn btn-success form-control" onclick="cmd_save()"><span class=" glyphicon glyphicon-floppy-disk" aria-hidden="true"></span> Save</button>
 					</div>
 					<div class="col-md-4">
 						<button class="btn btn-danger form-control">Discard changes  <span class="glyphicon glyphicon-remove-sign" aria-hidden="true"></span></button>
@@ -323,8 +320,7 @@
 						<label for="">Pan</label>	 <br/>			
 						<label for="">L </label>
 						<input type="range" id="panSlider">
-						<label for="">R </label>				
-										
+						<label for="">R </label>														
 					</div>
 				</div>		
 				<div class="row">
@@ -360,14 +356,17 @@
 					</div>
 				</div>
 
-				<div class="row">
+				<!--div class="row">
+					TODO: I am commenting out this because i think the other position is better grouping
+					All the control should be in one place
+					
 					<div class="col-md-6">
 						<button class="btn btn-success form-control">Save  <span class=" glyphicon glyphicon-floppy-disk" aria-hidden="true"></span></button>
 					</div>
 					<div class="col-md-6">
 									<button class="btn btn-danger form-control">Discard changes  <span class="glyphicon glyphicon-remove-sign" aria-hidden="true"></span></button>
 					</div>
-				</div>				
+				</div -->				
 			</div>
 
 		</div>
