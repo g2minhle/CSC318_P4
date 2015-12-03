@@ -70,13 +70,32 @@ h2, h3{
 	border-right: solid;
 	border-color: grey;
 	padding: 10px;
-
 	position: relative;
 }
+
 .lyric{
-	width: 50%;
+	margin-left: 3%;
+	width: 94%;
 }
 
+.divLyric{
+	width: 70%;
+	border:solid;
+	border-color : #C0C0C0;
+	display: inline-block;
+}
+
+.track:hover{
+	background-color: lightblue;
+}
+
+.selected{
+	background: royalblue;
+}
+
+.selected:hover{
+	background: royalblue;
+}
 
 .comment{
 	position: absolute;
@@ -89,6 +108,7 @@ h2, h3{
 }
 .close-track{
 	float: right;
+	color: red;
 }
 
 /* Show sheet by default */
