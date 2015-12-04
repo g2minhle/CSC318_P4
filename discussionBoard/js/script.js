@@ -23,4 +23,14 @@ $("#submit").on("click", function(e){
   newPost.appendTo("#post-list");
   $("#input-content").val("");
 
+
+  
 });
+$("#newThreadForm").submit(function(e){
+    e.preventDefault();
+    var newThreadList = $("#sidebar .js-nav-links li:last").clone();
+    newThreadList.find("a").text($("#newThreadTitle").val());
+    $("#sidebar .js-nav-links").append(newThreadList);
+
+    toastr.success('Thread created successfully.')
+  });
