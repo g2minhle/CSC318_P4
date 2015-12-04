@@ -23,4 +23,6 @@ $("#submit").on("click", function(e){
   newPost.appendTo("#post-list");
   $("#input-content").val("");
 
+
+  
 });
