@@ -1,6 +1,6 @@
 Stuff to do:
 
-- make border for circls on homepage
+- make border for circles on homepage
 
 Minh: 
 - main workspace: fixing messages 
