@@ -5,7 +5,8 @@ Stuff to do:
 - homepage positioning
 - design interaction to click on plus sign on homepage
 - 'Create New Thread' event (structure of discussion board??)
-- 
+- Stop music 
+- Technical music wording (ed)
 
 
 
