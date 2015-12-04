@@ -1,15 +1,20 @@
 Stuff to do:
-- main workspace: fixing messages 
-- homepage: add statistics chart
-- homepage: repositiong '+' button 
-- homepage positioning
-- homepage: design interaction to click on plus sign
-- discussionboard: 'Create New Thread' event (structure of discussion board??)
-- main workspace: Stop music 
-- main workspace: Technical music wording (ed)
-- main workspace: Make copies of main workspace 
 
-- group repo page??
-- pages for different profiles??
-- account setting interaction??
-- logout intraction??
+- make border for circls on homepage
+
+Minh: 
+- main workspace: fixing messages 
+
+Ed:
+- main workspace: Technical music wording 
+- discussionboard: 'Create New Thread' event
+
+Mujtaba:
+- homepage: add statistics chart
+- all pages: alert dialog boxes for all functionality
+- homepage: make + sign to an image
+- main workspace: Stop music 
+- main workspace: Make copies of main workspace 
+- main workspace: Make new activity for each band
+- discussion board: Change comment picture for added comment
+- homepage: make all discussion boards and projects available to each user
