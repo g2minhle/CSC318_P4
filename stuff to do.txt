@@ -8,6 +8,8 @@ Stuff to do:
 - Stop music 
 - Technical music wording (ed)
 
+- Make copies of main workspace
+
 
 
 - group repo page??
