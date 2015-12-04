@@ -2,6 +2,9 @@ var barStorage = {};
 var currentId = null;
 
 function a() {	
+	if(window.location.search == "?new=1"){
+		$('.track').hide();	
+	}
 	$('#div_Lyric').draggable({ containment: 'parent', axis: 'x' });
 	$('.js-track-images .trackLength').draggable({ 
 		containment: 'parent', 
@@ -11,8 +14,9 @@ function a() {
 			var trackID = $(this).id;
 			var offset = $(this).offset();
 			$('.' + $(this).attr('id') ).each(function (index ){
-				$(this).position({ 
-					top: offset.top + $(this).data('top-offset') , 
+				console.log(offset);
+				$(this).offset({ 
+					top: offset.top + $(this).data('top-offset'), 
 					left: offset.left + $(this).data('left-offset')
 				});			
 			});	
@@ -23,8 +27,8 @@ function a() {
 			var offset = $(this).offset();
 			$('.' + $(this).attr('id') ).each(function (index ){
 				console.log(offset);
-				$(this).position({ 
-					top: offset.top + $(this).data('top-offset') , 
+				$(this).offset({ 
+					top: offset.top + $(this).data('top-offset'), 
 					left: offset.left + $(this).data('left-offset')
 				});			
 			});				
@@ -50,7 +54,7 @@ function a() {
 						'<span class="glyphicon glyphicon-comment" aria-hidden="true"></span>' +
 												'</button>');
 		str.offset({ 
-			top: relY,
+			top: parentOffset.top + relY,
 			left: relX
 		});	
 		str.popover();
@@ -59,7 +63,18 @@ function a() {
 		$('.comment').contextmenu(function(){
 			$(this).hide();
 			return false;	
-		});
+		});		
+		
+		var trackID = $(this).id;
+			console.log('draging');			
+			var offset = $(this).offset();
+			$('.' + $(this).attr('id') ).each(function (index ){
+				console.log(offset);
+				$(this).offset({ 
+					top: offset.top + $(this).data('top-offset'), 
+					left: offset.left + $(this).data('left-offset')
+				});			
+			});
 		
 		return false;
 	});
@@ -73,6 +88,11 @@ function a() {
 	var offset = $('.js-track-images .trackLength').offset();
 	$('#btn_Note').offset({ top: offset.top, left: offset.left});
 }
+
+$('.comment').contextmenu(function(){
+	$(this).hide();
+	return false;	
+});		
 
 function cmd_save(){
 	$.notify('Change saved', 'success');
