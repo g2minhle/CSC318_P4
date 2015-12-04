@@ -50,6 +50,13 @@ function cmd_save(){
 	$.notify('Change saved', 'success');
 }
 
+function cmd_discard(){
+	$.notify('Change Not Saved! Redirecting to Home Page shortly!', 'warn');
+	window.setTimeout(function () {
+        location.href = "../homepage/index.html";
+    }, 2000);
+}
+
 $('.js-close-track').on('click', function(e){
 	// removing track
 	$(this).closest('.track').hide();
@@ -60,7 +67,6 @@ $('.track').on('click', function(e){
 	$('.track').removeClass('selected');
 	$(this).addClass('selected');
 });
-
 
 
 
