@@ -1,18 +1,19 @@
 #avatar {
     position: relative;
-    bottom: 500px;
-    left: 375px;
+    bottom:115px;
+    right: 292px;
 }
 
 #group1 {
     position: relative;
-    bottom: 600px;
+    bottom: 350px;
+    left:180px;
 }
 
 #group2 {
     position: relative;
-    bottom: 400px;
-    left: 450px;
+    bottom: 550px;
+    left: 750px;
 }
 
 #svgContainer { 
