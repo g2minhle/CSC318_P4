@@ -1,0 +1,9 @@
+Stuff to do:
+- design interaction to click on plus sign on homepage
+- what is + for 'Our brand's activity' used for?
+- repositiong '+' button on homepage
+- 'Create New Thread' event (structure of discussion board??)
+- group repo page??
+- pages for different profiles??
+- account setting interaction??
+- logout intraction??
