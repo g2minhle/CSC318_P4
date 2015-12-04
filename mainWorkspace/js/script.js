@@ -1,3 +1,6 @@
+var barStorage = {};
+var currentId = null;
+
 function a() {	
 	$('#div_Lyric').draggable({ containment: 'parent', axis: 'x' });
 	$('.js-track-images .trackLength').draggable({ 
@@ -15,8 +18,8 @@ function a() {
 		}});
 
 	$('.js-track-images .trackLength').contextmenu(function(e) {
-		var person = prompt("Please enter your comment", "My comment");
-  		if (person == null) return;
+		var comment = prompt("Please enter your comment", "My comment");
+  		if (comment == null) return;
 		var id = Math.random(); 		
 		var parentOffset = $(this).parent().offset();    
 		var relX = e.pageX - parentOffset.left;
@@ -25,14 +28,21 @@ function a() {
 		var str = $('<button id = "btn_'+ id+'" type="button"' +
 						'class="btn btn-xs btn-warning comment"' +
 						'data-toggle="popover"'+
-						'data-content="' + person +'">' +
+						'title="Me"' + 
+						'data-trigger="focus"' +
+						'data-content="' + comment +'">' +
 						'<span class="glyphicon glyphicon-comment" aria-hidden="true"></span>' +
 												'</button>');
 
 		str.css('left', relX).popover();
 		str.css('top', relY).popover();  	
-		$('#theTrackContainer').append(str);		
+		$(this).parent().append(str);		
 				
+		$('.comment').contextmenu(function(){
+			$(this).hide();
+			return false;	
+		});
+		
 		return false;
 	});
 	// $('#volumeSlider').slider();
@@ -56,12 +66,42 @@ $('.js-close-track').on('click', function(e){
 });
 
 $('.track').on('click', function(e){
-	if($(this).attr('id') == 'div_lyric') return;
+	var itemID = $(this).attr('id');
+	if(itemID == 'div_lyric') return;
+	
 	$('.track').removeClass('selected');
 	$(this).addClass('selected');
+
+	// save current 
+	if(currentId != null){
+		barStorage[currentId] = {};
+		barStorage[currentId]['volumeSlider'] = $('#volumeSlider').val();
+		barStorage[currentId]['panSlider'] = $('#panSlider').val();
+		barStorage[currentId]['bassSlider'] = $('#bassSlider').val();
+		barStorage[currentId]['middleSlider'] = $('#middleSlider').val();
+		barStorage[currentId]['trebbleSlider'] = $('#trebbleSlider').val();
+		console.log(barStorage);	
+	}
+	
+	// change slider
+	var trackId = itemID.replace("div_track", "");
+	
+	currentId = trackId;
+	
+	if(trackId in barStorage){
+		$('#volumeSlider').val(barStorage[trackId]['volumeSlider']);
+		$('#panSlider').val(barStorage[trackId]['panSlider']);		
+		$('#bassSlider').val(barStorage[trackId]['bassSlider']);
+		$('#middleSlider').val(barStorage[trackId]['middleSlider']);
+		$('#trebbleSlider').val(barStorage[trackId]['trebbleSlider']);		
+	} else {
+		$('#volumeSlider').val(50);
+		$('#panSlider').val(50);
+		$('#bassSlider').val(50);
+		$('#middleSlider').val(50);
+		$('#trebbleSlider').val(50);
+	}
 });
-
-
 
 
 $('.js-display-wave').on('click', function(){
@@ -84,7 +124,6 @@ $('.js-display-tab').on('click', function(){
 		trackColumn.find('.trackLength').data('srctabs')
 	);
 });
-
 
 function cmd_addTracK(){
 	$('#cmd_Upload').click();
