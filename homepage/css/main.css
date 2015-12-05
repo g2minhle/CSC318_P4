@@ -56,11 +56,9 @@ span
 #circle2 {
     position: relative;
     bottom: 175px;
-    left:840px;
+    left:770px;
     width:60px;
 	height:60px;
-	background-color: #D8D8D8;
-	border-radius:100%;
 	text-align:center;
 }
 
@@ -88,4 +86,8 @@ span
 h2 {
     margin-left:8px;
     margin-bottom:20px;
+}
+
+#stats1 {
+    margin-left:10px;
 }

@@ -187,3 +187,7 @@ function cmd_addLyric(){
 	$('#div_lyric').show();
 	$('#input_Lyric').focus();	
 }
+
+function alertMsg() {
+    alert("Functionality not implemented!");
+}

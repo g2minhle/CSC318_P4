@@ -16,7 +16,7 @@ $("#submit").on("click", function(e){
     '<div class="post-footer">Posted at ' + date.time + ' on ' + date.date + '.</div>'                  
   );
 
-  newPost.find("img").attr("src", "images/myAvatar.png");
+  newPost.find("img").attr("src", "images/avatar1.png");
   newPost.find("figcaption").text("Elliot Smith (You)");
 
 
@@ -36,3 +36,7 @@ $("#newThreadForm").submit(function(e){
 
     toastr.success('Thread created successfully.')
   });
+
+function alertMsg() {
+    alert("Functionality not implemented!");
+}

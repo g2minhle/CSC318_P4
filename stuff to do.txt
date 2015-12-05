@@ -9,12 +9,11 @@ Ed:
 - main workspace: Technical music wording 
 
 Mujtaba:
-- homepage: add statistics chart
-- all pages: alert dialog boxes for all functionality
-- homepage: make + sign to an image
+- homepage: add statistics chart - done
+- all pages: alert dialog boxes for all functionality - done
+- homepage: make + sign to an image and add to homepage - done
 - main workspace: Stop music 
-- main workspace: Make copies of main workspace 
-- main workspace: Make new activity for each band
-- discussion board: Change comment picture for added comment
-- homepage: make all discussion boards and projects available to each user
-- homepage: add 'add' button onto the homepage
+- main workspace: Make copies of main workspace - done
+- main workspace: Make '+' for new projects for each band - done
+- discussion board: Change comment picture for added comment - done
+- homepage: make all discussion boards and projects available to each user - done

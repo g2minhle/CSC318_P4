@@ -23,8 +23,8 @@
                     <li  class="active"><a href="./index.html"><span class="glyphicon glyphicon-home" aria-hidden="true"></span> Home </a></li>
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
-                    <li><a href="#"><span class="glyphicon glyphicon-wrench" aria-hidden="true"></span> Account setting</a></li>
-                    <li><a href="#"><span class="glyphicon glyphicon-off" aria-hidden="true"></span> Log out</a></li>
+                    <li><a href="#" onclick="alertMsg()"><span class="glyphicon glyphicon-wrench" aria-hidden="true"></span> Account setting</a></li>
+                    <li><a href="#" onclick="alertMsg()"><span class="glyphicon glyphicon-off" aria-hidden="true"></span> Log out</a></li>
                 </ul>
             </div>
             <!-- /.navbar-collapse -->
@@ -49,23 +49,25 @@
                 <div id="circle1">
                     <span>
                         </br>
-                        <b>Rockstars</b> </br></br>
+                        <b>Rockstars</b> </br>
                         <a href="../homepage/index.html"><img id="avatar2" src="images/avatar1.png" width="50" class="img-circle"></a>
                         <a href="../homepage/prof1.1.html"><img id="avatar2" src="images/avatar3.png" width="50" class="img-circle"></a>
                         <a href="../homepage/prof1.2.html"><img id="avatar2" src="images/myAvatar.png" width="50" class="img-circle"> </br></br></a>
                         <i>Recent Projects</i> </br>
                         <a href="../mainWorkspace/index.html"> "Project Banana" </a> <br>
-                        <a href="../mainWorkspace/index.html"> "Happy Song" </a> </br>
-                        <a href="../mainWorkspace/index.html"> "Sad Song" </a> </br> </br>
-                        <a > Group Repository </a>
+                        <a href="../mainWorkspace/index2.html"> "Happy Song" </a> </br>
+                        <a href="../mainWorkspace/index3.html"> "Sad Song" </a> </br> </br>
+                        <a href="#" onclick="alertMsg()"> Create New Project</a><br>
+                        <a href="#" onclick="alertMsg()"> Group Repository </a>
+
                     </span>
                 </div>
                 <img id="avatar" src="images/myAvatar.png" width="150" class="img-circle">
-                <img id="group1" src="images/Unknown.png" width="100" class="img-circle">
-                <a href="index2.html"> <img id="group2" src="images/Unknown2.png" width="100" class="img-circle"></a>
+                <a href="#" onclick="alertMsg()"><img id="group1" src="images/Unknown.png" width="100" class="img-circle"></a>
+                <a href="#" onclick="alertMsg()"> <img id="group2" src="images/Unknown2.png" width="100" class="img-circle"></a>
 
                 <div id="circle2">
-                    <span id="add"><a id="add2">+</a></span>
+                    <a href="#" onclick="alertMsg()"><img src="images/addSign.png" /></a>
                 </div>
 
             </div>
@@ -88,7 +90,7 @@
                         </tr>
 
                         <tr>
-                            <td>Mark created a new project: "Sad Song"</td>
+                            <td>Mark created a new project: <a href="../mainworkspace/index.html">"Sad Song"</a></td>
                         </tr>
 
                         <tr>
@@ -105,9 +107,7 @@
 
                     </tbody>
                 </table>
-                <div id="circle3">
-                    <span id="add"><a id="add2">+</a></span>
-                </div>
+                
             </div>
         </div>
     </div>
@@ -115,6 +115,8 @@
     <script src="js/jquery.js"></script>
     <script src="js/bootstrap.js"></script>
     <script src="js/line/svgDraw.js"></script>
+    <script src="js/script.js"></script>
+
 </body>
 
 </html>
