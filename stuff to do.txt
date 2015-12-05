@@ -3,11 +3,10 @@ Stuff to do:
 - make border for circles on homepage
 
 Minh: 
-- main workspace: fixing messages 
+- main workspace: fixing comments 
 
 Ed:
 - main workspace: Technical music wording 
-- discussionboard: 'Create New Thread' event
 
 Mujtaba:
 - homepage: add statistics chart
@@ -18,3 +17,4 @@ Mujtaba:
 - main workspace: Make new activity for each band
 - discussion board: Change comment picture for added comment
 - homepage: make all discussion boards and projects available to each user
+- homepage: add 'add' button onto the homepage
