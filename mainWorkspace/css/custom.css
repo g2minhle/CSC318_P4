@@ -21,7 +21,7 @@ h2, h3{
 }
 
 .header{
-	height: 5%;	
+	height: 5%;
 	max-height: 5%;
 }
 
@@ -99,7 +99,8 @@ h2, h3{
 
 .comment{
 	position: absolute;
-	top: 10px;
+  top: initial !important;
+	bottom: 10px !important;
 }
 
 #panSlider{
@@ -109,9 +110,4 @@ h2, h3{
 .close-track{
 	float: right;
 	color: red;
-}
-
-/* Show sheet by default */
-.tabs, .waves{
-	display: none;
 }
