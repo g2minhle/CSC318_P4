@@ -193,7 +193,7 @@ function input_fileUploaded(){
 	newTrack.find("img").attr("id", id);
 	newTrack.find(".trackLength").draggable(draggableObject);
 	newTrack.find(".trackLength").contextmenu(addComment);
-	$(".trackList").append(newTrack);
+	$(".trackList .track:last").before(newTrack);
 
 }
 
