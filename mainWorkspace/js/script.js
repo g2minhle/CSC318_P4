@@ -112,7 +112,7 @@ function cmd_discard(){
     }, 2000);
 }
 
-$('.js-close-track').on('click', function(e){
+$('body').on('click', '.js-close-track', function(e){
 	// removing track
 	$(this).closest('.track').hide();
 });
