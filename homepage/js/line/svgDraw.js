@@ -73,7 +73,7 @@ function connectElements(svg, path, startElem, endElem) {
 
 function connectAll() {
     // connect all the paths you want!
-    connectElements($("#svg1"), $("#myNewPath"), $("#avatar"),   $("#circle1"));
+    connectElements($("#svg1"), $("#myNewPath"), $("#avatar"),   $("#selectedGroup"));
     connectElements($("#svg1"), $("#path2"), $("#avatar"),   $("#group1"));
     connectElements($("#svg1"), $("#path3"), $("#avatar"),   $("#group2"));
 }
