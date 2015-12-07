@@ -71,6 +71,8 @@ h2, h3{
 	border-color: grey;
 	padding: 10px;
 	position: relative;
+
+	padding-bottom: 43px;
 }
 
 .lyric{
@@ -101,6 +103,9 @@ h2, h3{
 	position: absolute;
   top: initial !important;
 	bottom: 10px !important;
+}
+.comment .glyphicon-comment{
+	font-size: 25px;
 }
 
 #panSlider{
