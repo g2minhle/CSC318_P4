@@ -31,82 +31,129 @@
         </div>
         <!-- /.container-fluid -->
     </nav>
-
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-sm-8">
+    <div class="container-fluid">        
+        <div class="row fullPage">
+            <div class="col-sm-8 mainMenu">                
                 <div id="svgContainer" style="margin: 50px 50px;">
-                    <svg id="svg1" width="0" height="0">
-                        <path id="myNewPath" d="M0 0" stroke-width="0.3em" style="stroke:#555; fill:none;  " />
-                        <path id="path2" d="M0 0" stroke-width="0.3em" style="stroke:#555; fill:none;  " />
-                        <path id="path3" d="M0 0" stroke-width="0.3em" style="stroke:#555; fill:none;  " />
-                    </svg>
+                        <svg id="svg1" width="0" height="0">
+                            <path id="myNewPath" d="M0 0" stroke-width="0.3em" style="stroke:#555; fill:none;  " />
+                            <path id="path3" d="M0 0" stroke-width="0.3em" style="stroke:#555; fill:none; " />
+                        </svg>
                 </div>
-
-                <canvas id="myCanvas" width="665" height="350" style="border:0px solid #000000;">
-                    Your browser does not support the HTML5 canvas tag.
-                </canvas>
-                <div id="circle1">
-                    <span>
-                        </br>
-                        <b>Rockstars</b> </br>
-                        <a href="../homepage/index.html"><img id="avatar2" src="images/avatar1.png" width="50" class="img-circle"></a>
-                        <a href="../homepage/prof1.1.html"><img id="avatar2" src="images/avatar3.png" width="50" class="img-circle"></a>
-                        <a href="../homepage/prof1.2.html"><img id="avatar2" src="images/myAvatar.png" width="50" class="img-circle"> </br></br></a>
-                        <i>Recent Projects</i> </br>
-                        <a href="../mainWorkspace/index.html"> "Project Banana" </a> <br>
-                        <a href="../mainWorkspace/index2.html"> "Happy Song" </a> </br>
-                        <a href="../mainWorkspace/index3.html"> "Sad Song" </a> </br> </br>
-                        <a href="#" onclick="alertMsg()"> Create New Project</a><br>
-                        <a href="#" onclick="alertMsg()"> Group Repository </a>
-                    </span>
+                <div class="row"> 
+                    <div class="col-sm-1"></div>
+                    <div class="col-sm-3">                   
+                        <a class="btn btn-primary btn-circle btn-xxxl hidden" href="#" id="group1">
+                            <img onclick="alertMsg2()" src="images/Unknown.png" width="100" class="img-circle">
+                        </a>
+                    </div>                    
+                    <div class="col-sm-6">
+                        <canvas id="myCanvas">
+                            Your browser does not support the HTML5 canvas tag.
+                        </canvas>    
+                    </div>                        
+                    <div class="col-sm-2">
+                    </div>
                 </div>
-                <img id="avatar" src="images/avatar3.png" width="150" class="img-circle">
-                <a href="#" onclick="alertMsg()"><img id="group1" src="images/Unknown.png" width="100" class="img-circle"></a>
-                <a href="#" onclick="alertMsg()"> <img id="group2" src="images/Unknown2.png" width="100" class="img-circle"></a>
-
-                <div id="circle2">
-                    <a href="#" onclick="alertMsg()"><img src="images/addSign.png" /></a>
+                <div class="row"> 
+                    <div class="col-sm-3">
+                        
+                    </div>
+                    <div class="col-sm-4">                   
+                        <a class="btn btn-primary btn-circle btn-xxxxl" href="#" id="avatar">
+                            <img src="images/avatar3.png" width="150" class="img-circle">
+                        </a>
+                    </div>
+                    <div class="col-sm-5">
+                        <div id="selectedGroup">
+                            <div class="row">
+                                <h4>Rockstars</h4>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <p>
+                                        <a href="../homepage/index.html" class="btn btn-primary btn-circle-sm">
+                                            <img id="avatar2" src="images/avatar1.png" width="50" class="img-circle">
+                                        </a>
+                                        <a href="../homepage/prof1.1.html" class="btn btn-primary btn-circle-sm">
+                                            <img id="avatar2" src="images/avatar3.png" width="50" class="img-circle">
+                                        </a>
+                                        <a href="../homepage/prof1.2.html" class="btn btn-primary btn-circle-sm">
+                                            <img id="avatar2" src="images/myAvatar.png" width="50" class="img-circle">
+                                        </a>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <i>Recent Projects</i>
+                                    <ul class="leftAlign">
+                                        <li><a href="../mainWorkspace/index.html">Project Banana</a></li>
+                                        <li><a href="../mainWorkspace/index2.html">Happy Song</a></li>
+                                        <li><a href="../mainWorkspace/index3.html">Sad Song</a></li>
+                                    </ul>
+                                </div>
+                            </div>    
+    
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <a class="btn btn-primary" href="#" onclick="alertMsg()">
+                                        <span class="glyphicon glyphicon-th-list"></span>
+                                        Group Repository 
+                                    </a>
+                                </div>
+                            </div>                          
+                        </div>                                       
+                    </div>
                 </div>
-
-            </div>
-            </br>
-            <div class="col-sm-4">
-            	<h2> Houman's Profle</h2>
-                <table class="table table-striped">
-                    <thead>
-                        <tr>
-                            <th id="title">Rocktars activity</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>Johnny added a guitar track to <a href="../mainworkspace/index.html"> Happy Song <a/></td>
-                        </tr>
-
-                        <tr>
-                            <td>Johnny commented on <a href="../discussionBoard/index.html">Project Banana: <i>'I think we should add some...'</i> </a></td>
-                        </tr>
-
-                        <tr>
-                            <td>Mark created a new project: <a href="../mainworkspace/index.html">"Sad Song"</a></td>
-                        </tr>
-
-                        <tr>
-                            <td>Chris added a new vocal track to the group repository </td>
-                        </tr>
-
-                        <tr>
-                            <td>Chris added lyrics to the group repository </td>
-                        </tr>
-
-                        <tr>
-                            <td>Johnny sent a new message in the discussion board: <a href="../discussionBoard/index.html"><i>'Hey guys!...'</i></a></td>
-                        </tr>
-
-                    </tbody>
-                </table>
                 
+                <div class="row">
+                    <div class="col-sm-2"></div>                        
+                    <div class="col-sm-10">
+                        <a class="btn btn-primary btn-circle btn-xxxl" href="index2.html" id="group2"> 
+                            <img src="images/Unknown2.png" width="100" class="img-circle">
+                        </a>                    
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <h2> Mark's Profle</h2>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-12">
+                    <table class="table table-striped">
+                        <thead>
+                            <tr>
+                                <th id="title">Mark activity</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Mark created a new project: <a href="../mainworkspace/index3.html">"Happy Song"</a></td>
+                            </tr>
+                            <tr>
+                                <td>Mark created a new project: <a href="../mainworkspace/index3.html">"Tears in Haven"</a></td>
+                            </tr>
+    
+                            <tr>
+                                <td>Mark added a new vocal track to the group repository </td>
+                            </tr>
+    
+                            <tr>
+                                <td>Mark added lyrics to the group repository </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div id="chart_div" class="graph"></div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -114,8 +161,8 @@
     <script src="js/jquery.js"></script>
     <script src="js/bootstrap.js"></script>
     <script src="js/line/svgDraw.js"></script>
-    <script src="js/script.js"></script>
-
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script src="js/scriptprof1.1.js"></script>
 </body>
 
 </html>

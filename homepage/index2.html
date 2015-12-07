@@ -7,7 +7,7 @@
 
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/bootstrap-theme.css">
-    <link rel="stylesheet" href="css/main2.css">
+    <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
     <nav class="navbar navbar-default navbar-inverse">
@@ -23,94 +23,159 @@
                     <li  class="active"><a href="./index.html"><span class="glyphicon glyphicon-home" aria-hidden="true"></span> Home </a></li>
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
-                    <li><a href="#" onclick = "alertMsg()"><span class="glyphicon glyphicon-wrench" aria-hidden="true"></span> Account setting</a></li>
-                    <li><a href="#" onclick = "alertMsg()"><span class="glyphicon glyphicon-off" aria-hidden="true"></span> Log out</a></li>
+                    <li><a href="#" onclick="alertMsg()"><span class="glyphicon glyphicon-wrench" aria-hidden="true"></span> Account setting</a></li>
+                    <li><a href="#" onclick="alertMsg()"><span class="glyphicon glyphicon-off" aria-hidden="true"></span> Log out</a></li>
                 </ul>
             </div>
             <!-- /.navbar-collapse -->
         </div>
         <!-- /.container-fluid -->
     </nav>
-
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-sm-8">
+    <div class="container-fluid">        
+        <div class="row fullPage">
+            <div class="col-sm-8 mainMenu">                
                 <div id="svgContainer" style="margin: 50px 50px;">
-                    <svg id="svg1" width="0" height="0">
-                        <path id="myNewPath" d="M0 0" stroke-width="0.3em" style="stroke:#555; fill:none;  " />
-                        <path id="path2" d="M0 0" stroke-width="0.3em" style="stroke:#555; fill:none;  " />
-                        <path id="path3" d="M0 0" stroke-width="0.3em" style="stroke:#555; fill:none;  " />
-                    </svg>
+                        <svg id="svg1" width="0" height="0">
+                            <path id="myNewPath" d="M0 0" stroke-width="0.3em" style="stroke:#555; fill:none;  " />
+                            <path id="path2" d="M0 0" stroke-width="0.3em" style="stroke:#555; fill:none;  " />
+                            <path id="path3" d="M0 0" stroke-width="0.3em" style="stroke:#555; fill:none;  " />
+                        </svg>
                 </div>
-
-                <canvas id="myCanvas" width="665" height="350" style="border:0px solid #000000;">
-                    Your browser does not support the HTML5 canvas tag.
-                </canvas>
-                <div id="circle1">
-                    <span>
-                        </br>
-                        <b>Silent Geese</b> </br>
-                        <img id="avatar2" src="images/avatar1.png" width="50" class="img-circle">
-                        <img id="avatar2" src="images/avatar3.png" width="50" class="img-circle">
-                        <img id="avatar2" src="images/myAvatar.png" width="50" class="img-circle"> </br></br>
-                        <i>Recent Projects</i> </br>
-                        <a href="../mainWorkspace/index.html"> "Interstate Song Love" </a> <br>
-                        <a href="../mainWorkspace/index2.html"> "Proud Mary" </a> </br>
-                        <a href="../mainWorkspace/index3.html"> "Tears in Haven" </a> </br> </br>
-                        <a href="#" onclick="alertMsg()"> Create New Project</a><br>
-                        <a href="#" onclick="alertMsg()"> Group Repository </a>
-                    </span>
+                <div class="row"> 
+                    <div class="col-sm-1"></div>
+                    <div class="col-sm-3">                   
+                        <a class="btn btn-primary btn-circle btn-xxxl" href="#" id="group1">
+                            <img onclick="alertMsg2()" src="images/Unknown.png" width="100" class="img-circle">
+                        </a>
+                    </div>
+                    <div class="col-sm-6">
+                        <canvas id="myCanvas">
+                            Your browser does not support the HTML5 canvas tag.
+                        </canvas>    
+                    </div>                        
+                    <div class="col-sm-2">
+                        <div id="circle2">
+                            <a class="btn btn-primary btn-circle btn-xl" href="#" onclick="alertMsg()">
+                                <span class="glyphicon glyphicon glyphicon-plus"></span>
+                            </a>
+                        </div>    
+                    </div>
                 </div>
-                <img id="avatar" src="images/avatar1.png" width="150" class="img-circle">
-                <a href="#" onclick="alertMsg2()"><img id="group1" src="images/Unknown.png" width="100" class="img-circle"></a>
-                <a href="index.html"> <img id="group2" src="images/group1.jpg" width="100" class="img-circle"></a>
-
-                <div id="circle2">
-                    <a href="#" onclick="alertMsg()"><img src="images/addSign.png" /></a>
+                <div class="row"> 
+                    <div class="col-sm-3">
+                        
+                    </div>
+                    <div class="col-sm-4">                   
+                        <a class="btn btn-primary btn-circle btn-xxxxl" href="#" id="avatar">
+                            <img src="images/avatar1.png" width="150" class="img-circle">
+                        </a>
+                    </div>
+                    <div class="col-sm-5">
+                        <a class="btn btn-primary btn-circle btn-xxxl" href="index.html" id="group2"> 
+                            <img src="images/group1.jpg" width="100" class="img-circle">
+                        </a>                    
+                    </div>
                 </div>
-
+                
+                <div class="row">
+                    <div class="col-sm-12"> 
+                        <p></p>                       
+                        <div id="selectedGroup">
+                            <div class="row">
+                                <h4>Silent Geese activity</h4>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <p>
+                                        <a href="../homepage/index.html" class="btn btn-primary btn-circle-sm">
+                                            <img id="avatar2" src="images/avatar1.png" width="50" class="img-circle">
+                                        </a>
+                                        <a href="../homepage/prof1.1.html" class="btn btn-primary btn-circle-sm">
+                                            <img id="avatar2" src="images/avatar3.png" width="50" class="img-circle">
+                                        </a>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <a class="btn btn-primary" href="#" onclick="alertMsg()">
+                                        <span class="glyphicon glyphicon glyphicon-plus"></span> 
+                                        Create New Project
+                                    </a>
+                                    
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <i>Recent Projects</i>
+                                    <ul class="leftAlign">
+                                        <li><a href="../mainWorkspace/index.html">Interstate Song Love</a></li>
+                                        <li><a href="../mainWorkspace/index2.html">Proud Mary</a></li>
+                                        <li><a href="../mainWorkspace/index3.html"> "Tears in Haven" </a></li>
+                                    </ul>
+                                </div>
+                            </div>    
+    
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <a class="btn btn-primary" href="#" onclick="alertMsg()">
+                                        <span class="glyphicon glyphicon-th-list"></span>
+                                        Group Repository 
+                                    </a>
+                                </div>
+                            </div>                          
+                        </div>                        
+                    </div>
+                </div>
             </div>
-            </br>
             <div class="col-sm-4">
-            	<h2> Welcome Jung!</h2>
-                <table class="table table-striped">
-                    <thead>
-                        <tr>
-                            <th id="title">Silent Geese activity</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>Johnny added a guitar track to <a href="../mainworkspace/index.html"> Interstate Love Song <a/></td>
-                        </tr>
-
-                        <tr>
-                            <td>Johnny commented on <a href="../discussionBoard/index.html">Interstate Love Song: <i>'I think we should add some...'</i> </a></td>
-                        </tr>
-
-                        <tr>
-                            <td>Mark created a new project: <a href="../mainworkspace/index3.html">"Tears in Heaven"</a></td>
-                        </tr>
-
-                        <tr>
-                            <td>Chris added a new vocal track to the group repository </td>
-                        </tr>
-
-                        <tr>
-                            <td>Chris added lyrics to the group repository </td>
-                        </tr>
-
-                        <tr>
-                            <td>Johnny sent a new message in the discussion board: <a href="../discussionBoard/index.html"><i>'Hey guys!...'</i></a></td>
-                        </tr>
-
-                    </tbody>
-                </table>
-                <div id="stats1">
-                    <img src="images/stats2.png" width=200>
-                    <img src="images/stats3.png" width=200>
+                <div class="row">
+                    <div class="col-sm-12">
+                        <h2> Welcome Johnny!</h2>
+                    </div>
                 </div>
-
+                <div class="row">
+                    <div class="col-sm-12">
+                    <table class="table table-striped">
+                        <thead>
+                            <tr>
+                                <th id="title">Silent Geese activity</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Johnny added a guitar track to <a href="../mainworkspace/index.html"> Interstate Love Song <a/></td>
+                            </tr>
+    
+                            <tr>
+                                <td>Johnny commented on <a href="../discussionBoard/index.html">Interstate Love Song: <i>'I think we should add some...'</i> </a></td>
+                            </tr>
+    
+                            <tr>
+                                <td>Mark created a new project: <a href="../mainworkspace/index3.html">"Tears in Haven"</a></td>
+                            </tr>
+    
+                            <tr>
+                                <td>Mark added a new vocal track to the group repository </td>
+                            </tr>
+    
+                            <tr>
+                                <td>Mark added lyrics to the group repository </td>
+                            </tr>
+    
+                            <tr>
+                                <td>Johnny sent a new message in the discussion board: <a href="../discussionBoard/index.html"><i>'Hey guys!...'</i></a></td>
+                            </tr>
+    
+                        </tbody>
+                    </table>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div id="piechart" class="graph"></div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -118,7 +183,8 @@
     <script src="js/jquery.js"></script>
     <script src="js/bootstrap.js"></script>
     <script src="js/line/svgDraw.js"></script>
-    <script src="js/script.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script src="js/script2.js"></script>
 </body>
 
 </html>
