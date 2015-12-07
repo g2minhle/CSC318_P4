@@ -1,7 +1,7 @@
 $("#submit").on("click", function(e){
   e.preventDefault();
   var newPost = $("#post-2").clone();
-  
+
   var date = {
     time: new Date().getHours() + ":" +
          ((new Date().getMinutes() > 10) ? new Date().getMinutes()
@@ -12,8 +12,8 @@ $("#submit").on("click", function(e){
   }
 
   newPost.find(".panel-body").html(
-    $("#input-content").val() + 
-    '<div class="post-footer">Posted at ' + date.time + ' on ' + date.date + '.</div>'                  
+    $("#input-content").val() +
+    '<div class="post-footer">Posted at ' + date.time + ' on ' + date.date + '.</div>'
   );
 
   newPost.find("img").attr("src", "images/avatar1.png");
@@ -24,13 +24,13 @@ $("#submit").on("click", function(e){
   $("#input-content").val("");
 
 
-  
+
 });
 
 
 $("#newThreadForm").submit(function(e){
     e.preventDefault();
-    var newThreadList = $("#sidebar .js-nav-links li:last").clone();
+    var newThreadList = $("#sidebar .js-nav-links li:first").clone();
     newThreadList.find("a").text($("#newThreadTitle").val());
     $("#sidebar .js-nav-links").prepend(newThreadList);
 
