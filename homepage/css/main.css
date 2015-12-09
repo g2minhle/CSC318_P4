@@ -1,47 +1,18 @@
-#avatar {
-    position: relative;
-    bottom: 500px;
-    left: 375px;
-}
-
-#group1 {
-    position: relative;
-    bottom: 600px;
-}
-
-#group2 {
-    position: relative;
-    bottom: 400px;
-    left: 450px;
-}
-
 #svgContainer { 
 	z-index: 0;
 	position:absolute;
-	opacity: 0.5;
+	opacity: 1;
 }
 
-#circle1 {
-    position: relative;
-    bottom: -30px;
-    left:100px;
-    width:300px;
-	height:300px;
-	background-color: #D8D8D8;
-	border-radius:100%;
-    border-style: solid;
-    border-color: #337BB8;
-	text-align:center;
-	line-height:80px;
-}
-
-
-span
-{
-    line-height: normal;
-    display:inline-block;
-    vertical-align: middle;
-    font-size: 19px;
+#selectedGroup {
+  width:300px;
+  height:300px;
+  background-color: #D8D8D8;
+  border-radius:10%;
+  border-style: solid;
+  border-color: #337BB8;
+  text-align:center;  
+  overflow: hidden;
 }
 
 .col-sm-8 {
@@ -54,34 +25,11 @@ span
 }
 
 #circle2 {
-    position: relative;
-    bottom: 175px;
-    left:770px;
-    width:60px;
-	height:60px;
-	text-align:center;
+  width:60px;
+  height:60px;
+  text-align:center;
 }
 
-#circle3 {
-    position: relative;
-    bottom: -320px;
-    left:370px;
-    width:60px;
-	height:60px;
-	background-color: #D8D8D8;
-	border-radius:100%;
-	text-align:center;
-}
-
-#add {
-    font-size: 60px;
-    position: relative;
-    bottom: 12px;
-}
-
-#add2 {
-    text-decoration: none;
-}
 
 h2 {
     margin-left:8px;
@@ -90,4 +38,66 @@ h2 {
 
 #stats1 {
     margin-left:10px;
+}
+
+.btn-circle {
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  padding: 6px 0;
+  font-size: 12px;
+  line-height: 1.428571429;
+  border-radius: 50%;
+}
+.btn-circle.btn-lg {
+  width: 50px;
+  height: 50px;
+  padding: 10px 16px;
+  font-size: 18px;
+  line-height: 1.33;
+  border-radius: 50%;
+}
+.btn-circle.btn-xl {
+  width: 70px;
+  height: 70px;
+  padding: 30% 25%;
+  font-size: 24px;
+  line-height: 1.33;
+  border-radius: 50%;
+}
+
+
+.btn-circle.btn-xxxl {
+  width: 124px;
+  height: 124px;
+  padding: 10px 10px;
+  font-size: 24px;
+  line-height: 1.33;
+  border-radius: 50%;
+}
+
+.btn-circle.btn-xxxxl {
+  width: 180px;
+  height: 180px;
+  padding: 10px 10px;
+  font-size: 24px;
+  line-height: 1.33;
+  border-radius: 50%;
+}
+
+.mainMenu{
+    overflow-x: scroll;
+    overflow-y: scroll;
+}
+
+.leftAlign{
+  text-align: left
+}
+
+
+.btn-circle-sm {
+  width: 58px;
+  height: 58px;
+  padding: 1.5% 1%;
+  border-radius: 50%;
 }

@@ -14,12 +14,11 @@ function drawChart() {
 	var data = google.visualization.arrayToDataTable([
 		['Contribution', 'Hours'],
 		['Johnny', 3],
-		['Mark', 1],
-		['Chris', 2],
+		['Jeff', 3],
 	]);
 
 	var options = {
-		title: 'Rockstars contribution stat'
+		title: 'Silent Geese contribution stat'
 	};
 
 	var chart = new google.visualization.PieChart(document.getElementById('piechart'));
